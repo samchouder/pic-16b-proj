@@ -1,5 +1,5 @@
 # pic-16b-proj
 
 ..O
-.X.
+.XX
 X.O
