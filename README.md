@@ -1,4 +1,4 @@
 # pic-16b-proj
-.OO
+XOO
 OXX
 XXO
