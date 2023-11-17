@@ -4,52 +4,46 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Car Recommendation App</title>
+    <title style="color: #006400;">Your Car Recommendation App</title>
     <style>
         body {
-            font-family: 'Arial', sans-serif;
-            background-color: #f5f5f5;
-            color: #333;
-            margin: 20px;
+            font-family: 'Arial Rounded MT Bold', sans-serif;
+            background-color: #98FB98; /* Mint Green */
+            text-align: center;
+            padding: 20px;
         }
-
         h1 {
-            color: #009688;
+            color: #006400; /* Dark Green */
         }
-
         form {
-            margin-bottom: 20px;
+            display: inline-block;
+            background-color: rgba(255, 255, 255, 0.7);
+            padding: 20px;
+            border-radius: 10px;
         }
-
+        input[type="number"], input[type="submit"], input[type="reset"] {
+            padding: 8px;
+            margin: 5px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        input[type="submit"], input[type="reset"] {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
         table {
-            width: 100%;
-            border-collapse: collapse;
             margin-top: 20px;
+            width: 80%;
+            border-collapse: collapse;
         }
-
         th, td {
             border: 1px solid #ddd;
             padding: 8px;
-            text-align: left;
         }
-
         th {
-            background-color: #009688;
-            color: white;
-        }
-
-        button {
-            background-color: #009688;
-            color: white;
-            border: none;
-            padding: 10px 20px;
-            text-align: center;
-            text-decoration: none;
-            display: inline-block;
-            font-size: 16px;
-            margin: 4px 2px;
-            cursor: pointer;
-            border-radius: 5px;
+            background-color: #f2f2f2;
         }
     </style>
 </head>
@@ -79,12 +73,14 @@
     <br>
 
     <button type="submit">Filter Results</button>
+    <input type="reset" value="Reset">
 </form>
 
 {% if cars %}
-    <h2>Filtered Results</h2>
-    <table>
+    <h2>Complete Dataset</h2>
+    <table border="1">
         <tr>
+            <th>Number</th>
             <th>Year</th>
             <th>Name</th>
             <th>Mileage</th>
@@ -94,6 +90,7 @@
         </tr>
         {% for car in cars %}
             <tr>
+                <td>{{ car['Number'] }}</td>
                 <td>{{ car['Year'] }}</td>
                 <td>{{ car['Name'] }}</td>
                 <td>{{ car['Mileage'] }}</td>
