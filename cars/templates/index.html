@@ -4,81 +4,82 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title style="color: #006400;">Your Car Recommendation App</title>
+    <title>Your Car Recommendation App</title>
     <style>
         body {
-            font-family: 'Arial Rounded MT Bold', sans-serif;
-            background-color: #98FB98; /* Mint Green */
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            background-color: #f4f4f4;
             text-align: center;
             padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
+
+        img {
+            max-width: 80%;
+            height: auto;
+            margin-bottom: 20px;
+        }
+
         h1 {
-            color: #006400; /* Dark Green */
+            color: #333;
         }
+
         form {
-            display: inline-block;
-            background-color: rgba(255, 255, 255, 0.7);
-            padding: 20px;
-            border-radius: 10px;
+            margin-bottom: 20px;
         }
-        input[type="number"], input[type="submit"], input[type="reset"] {
-            padding: 8px;
-            margin: 5px;
-            border-radius: 5px;
-            border: 1px solid #ccc;
-        }
-        input[type="submit"], input[type="reset"] {
+
+        button {
             background-color: #4CAF50;
             color: white;
+            padding: 15px 20px;
+            font-size: 16px;
             border: none;
+            border-radius: 5px;
             cursor: pointer;
         }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
         table {
-            margin-top: 20px;
             width: 80%;
             border-collapse: collapse;
+            margin-top: 20px;
         }
+
         th, td {
             border: 1px solid #ddd;
             padding: 8px;
+            text-align: left;
         }
+
         th {
-            background-color: #f2f2f2;
+            background-color: #4CAF50;
+            color: white;
         }
     </style>
 </head>
 <body>
 
+<img src="https://pngimg.com/d/aston_martin_PNG14.png" alt="Car Image">
+
 <h1>Welcome to Your Car Recommendation App</h1>
 
 <form action="/filter" method="post">
+    <!-- Your filter form here -->
     <label for="min_year">Minimum Year:</label>
     <input type="number" id="min_year" name="min_year" value="2020" required>
-    <br>
-
-    <label for="max_year">Maximum Year:</label>
-    <input type="number" id="max_year" name="max_year" value="2023" required>
-    <br>
-
-    <label for="min_price">Minimum Price:</label>
-    <input type="number" id="min_price" name="min_price" value="0" required>
-    <br>
-
-    <label for="max_price">Maximum Price:</label>
-    <input type="number" id="max_price" name="max_price" value="40000" required>
-    <br>
-
-    <label for="min_rating">Minimum Rating:</label>
-    <input type="number" step="0.1" id="min_rating" name="min_rating" value="4.5" required>
-    <br>
+    <!-- Add other input fields for filtering -->
 
     <button type="submit">Filter Results</button>
-    <input type="reset" value="Reset">
 </form>
 
 {% if cars %}
-    <h2>Complete Dataset</h2>
-    <table border="1">
+    <h2>Filtered Results</h2>
+    <table>
         <tr>
             <th>Number</th>
             <th>Year</th>
