@@ -1,0 +1,539 @@
+Make,Model,Year
+Acura,Acura RDX,2024
+Lincoln,Lincoln Navigator L,2024
+Lexus,Lexus UX 250h,2024
+Land Rover,Land Rover Range Rover Velar,2024
+Lamborghini,Lamborghini Urus,2022
+Lamborghini,Lamborghini Huracan Tecnica,2023
+Kia,Kia Carnival,2024
+Karma,Karma GS-6,2022
+Jeep,Jeep Gladiator,2024
+Jaguar,Jaguar I-PACE,2024
+Jaguar,Jaguar F-PACE,2024
+Jaguar,Jaguar E-PACE,2024
+INFINITI,INFINITI QX80,2024
+INEOS,INEOS Grenadier,2024
+Hyundai,Hyundai Santa Cruz,2024
+Hyundai,Hyundai Venue,2024
+Honda,Honda Odyssey,2024
+GMC,GMC Savana 3500,2024
+GMC,GMC Savana 2500,2024
+Genesis,Genesis GV80,2024
+Ford,Ford Transit-350,2024
+Ford,Ford Transit-250,2024
+FIAT,FIAT 500X,2023
+Ferrari,Ferrari SF90 Stradale,2023
+Ferrari,Ferrari SF90 Spider,2023
+Dodge,Dodge Hornet,2024
+Dodge,Dodge Durango,2024
+Dodge,Dodge Charger,2023
+Chrysler,Chrysler Voyager,2024
+Chevrolet,Chevrolet Express 3500,2024
+Cadillac,Cadillac XT6,2024
+Buick,Buick Envista,2024
+Volvo,Volvo XC90 Recharge Plug-In Hybrid,2024
+Volvo,Volvo XC60 Recharge Plug-In Hybrid,2024
+Volvo,Volvo XC60,2024
+Volvo,Volvo XC40 Recharge Pure Electric,2023
+Volvo,Volvo XC40,2024
+Volvo,Volvo C40 Recharge Pure Electric,2024
+Volvo,Volvo V90 Cross Country,2024
+Volvo,Volvo V60 Recharge Plug-In Hybrid,2024
+Volvo,Volvo V60 Cross Country,2024
+Volvo,Volvo S90 Recharge Plug-In Hybrid,2024
+Volvo,Volvo S90,2024
+Volvo,Volvo S60 Recharge Plug-In Hybrid,2024
+Volvo,Volvo S60,2024
+Buick,Buick Envision,2024
+Buick,Buick Encore GX,2024
+Buick,Buick Encore,2022
+Buick,Buick Enclave,2024
+Cadillac,Cadillac XT5,2024
+Cadillac,Cadillac XT4,2024
+Cadillac,Cadillac LYRIQ,2024
+Cadillac,Cadillac Escalade ESV,2024
+Cadillac,Cadillac Escalade,2024
+Cadillac,Cadillac CT5-V,2024
+Cadillac,Cadillac CT5,2024
+Cadillac,Cadillac CT4-V,2024
+Cadillac,Cadillac CT4,2024
+Chevrolet,Chevrolet Express 2500,2024
+Chevrolet,Chevrolet Silverado EV,2024
+Chevrolet,Chevrolet Silverado 3500,2024
+Chevrolet,Chevrolet Silverado 2500,2024
+Chevrolet,Chevrolet Silverado 1500 Limited,2022
+Chevrolet,Chevrolet Silverado 1500,2024
+Chevrolet,Chevrolet Colorado,2024
+Chevrolet,Chevrolet Trax,2024
+Chevrolet,Chevrolet Trailblazer,2024
+Chevrolet,Chevrolet Tahoe,2024
+Chevrolet,Chevrolet Suburban,2024
+Chevrolet,Chevrolet Equinox,2024
+Chevrolet,Chevrolet Bolt EUV,2023
+Chevrolet,Chevrolet Blazer EV,2024
+Chevrolet,Chevrolet Blazer,2024
+Chevrolet,Chevrolet Spark,2022
+Chevrolet,Chevrolet Malibu,2024
+Chevrolet,Chevrolet Corvette E-Ray,2024
+Chevrolet,Chevrolet Corvette,2024
+Chevrolet,Chevrolet Camaro,2024
+Chevrolet,Chevrolet Bolt EV,2023
+Chrysler,Chrysler Pacifica Hybrid,2024
+Chrysler,Chrysler Pacifica,2024
+Chrysler,Chrysler 300,2023
+Dodge,Dodge Challenger,2023
+Ferrari,Ferrari Roma,2023
+Ferrari,Ferrari Portofino M,2023
+Ferrari,Ferrari F8 Tributo,2023
+Ferrari,Ferrari F8 Spider,2023
+Ferrari,Ferrari 812 GTS,2023
+Ferrari,Ferrari 812 Competizione,2023
+Ferrari,Ferrari 296 GTS,2023
+Ferrari,Ferrari 296 GTB,2023
+Ford,Ford Transit-150,2024
+Ford,Ford E-Transit,2024
+Ford,Ford Ranger,2024
+Ford,Ford Maverick,2024
+Ford,Ford F-450,2024
+Ford,Ford F-350,2024
+Ford,Ford F-250,2024
+Ford,Ford F-150 Lightning,2024
+Ford,Ford F-150,2024
+Ford,Ford Mustang Mach-E,2024
+Ford,Ford Explorer,2024
+Ford,Ford Expedition Max,2024
+Ford,Ford Expedition,2024
+Ford,Ford Escape PHEV,2024
+Ford,Ford Escape,2024
+Ford,Ford Edge,2024
+Ford,Ford EcoSport,2022
+Ford,Ford Bronco Sport,2024
+Ford,Ford Bronco,2024
+Ford,Ford Transit Connect,2023
+Ford,Ford Shelby GT500,2022
+Ford,Ford Mustang,2024
+Genesis,Genesis GV70,2024
+Genesis,Genesis GV60,2024
+Genesis,Genesis Electrified GV70,2024
+Genesis,Genesis G90,2024
+Genesis,Genesis G80,2024
+Genesis,Genesis G70,2023
+Genesis,Genesis Electrified G80,2023
+GMC,GMC Sierra 3500,2024
+GMC,GMC Sierra 2500,2024
+GMC,GMC Sierra 1500 Limited,2022
+GMC,GMC Sierra 1500,2024
+GMC,GMC HUMMER EV,2024
+GMC,GMC Canyon,2024
+GMC,GMC Yukon XL,2024
+GMC,GMC Yukon,2024
+GMC,GMC Terrain,2024
+GMC,GMC HUMMER EV SUV,2024
+Honda,Honda Ridgeline,2023
+Honda,Honda Pilot,2024
+Honda,Honda Passport,2024
+Honda,Honda HR-V,2024
+Honda,Honda CR-V Hybrid,2024
+Honda,Honda CR-V,2024
+Honda,Honda Insight,2022
+Honda,Honda Civic Type R,2023
+Honda,Honda Civic Si,2024
+Honda,Honda Civic,2024
+Honda,Honda Accord Hybrid,2024
+Honda,Honda Accord,2024
+Hyundai,Hyundai Tucson Plug-In Hybrid,2024
+Hyundai,Hyundai Tucson Hybrid,2024
+Hyundai,Hyundai Tucson,2024
+Hyundai,Hyundai Santa Fe Plug-In Hybrid,2023
+Hyundai,Hyundai Santa Fe HEV,2023
+Hyundai,Hyundai Santa Fe,2023
+Hyundai,Hyundai Palisade,2024
+Hyundai,Hyundai NEXO,2023
+Hyundai,Hyundai Kona N,2023
+Hyundai,Hyundai Kona EV,2023
+Hyundai,Hyundai Kona,2024
+Hyundai,Hyundai IONIQ 5,2024
+Hyundai,Hyundai Veloster N,2022
+Hyundai,Hyundai Sonata Hybrid,2023
+Hyundai,Hyundai Sonata,2023
+Hyundai,Hyundai IONIQ Plug-In Hybrid,2022
+Hyundai,Hyundai IONIQ Hybrid,2022
+Hyundai,Hyundai IONIQ 6,2024
+Hyundai,Hyundai Elantra N,2023
+Hyundai,Hyundai Elantra HEV,2023
+Hyundai,Hyundai Elantra,2024
+Hyundai,Hyundai Accent,2022
+INFINITI,INFINITI QX60,2024
+INFINITI,INFINITI QX55,2024
+INFINITI,INFINITI QX50,2024
+INFINITI,INFINITI Q60,2022
+INFINITI,INFINITI Q50,2024
+Jaguar,Jaguar XF,2024
+Jaguar,Jaguar F-TYPE,2024
+Jeep,Jeep Wrangler Unlimited 4xe,2022
+Jeep,Jeep Wrangler Unlimited,2022
+Jeep,Jeep Wrangler 4xe,2024
+Jeep,Jeep Wrangler,2024
+Jeep,Jeep Wagoneer L,2024
+Jeep,Jeep Wagoneer,2024
+Jeep,Jeep Renegade,2023
+Jeep,Jeep Grand Wagoneer L,2024
+Jeep,Jeep Grand Wagoneer,2024
+Jeep,Jeep Grand Cherokee WK,2022
+Jeep,Jeep Grand Cherokee L,2024
+Jeep,Jeep Grand Cherokee 4xe,2024
+Jeep,Jeep Grand Cherokee,2024
+Jeep,Jeep Compass,2024
+Jeep,Jeep Cherokee,2023
+Kia,Kia Telluride,2024
+Kia,Kia Sportage Plug-In Hybrid,2023
+Kia,Kia Sportage Hybrid,2023
+Kia,Kia Sportage,2024
+Kia,Kia Sorento Plug-In Hybrid,2024
+Kia,Kia Sorento Hybrid,2024
+Kia,Kia Sorento,2023
+Kia,Kia Seltos,2024
+Kia,Kia Niro Plug-In Hybrid,2024
+Kia,Kia Niro EV,2024
+Kia,Kia Niro,2024
+Kia,Kia EV6,2024
+Kia,Kia Stinger,2023
+Kia,Kia Soul,2024
+Kia,Kia Rio,2023
+Kia,Kia K5,2024
+Kia,Kia Forte,2024
+Lamborghini,Lamborghini Huracan STO,2023
+Lamborghini,Lamborghini Huracan Sterrato,2023
+Lamborghini,Lamborghini Huracan EVO,2023
+Lamborghini,Lamborghini Aventador SVJ,2022
+Land Rover,Land Rover Range Rover Sport,2024
+Land Rover,Land Rover Range Rover Evoque,2024
+Land Rover,Land Rover Range Rover,2024
+Land Rover,Land Rover Discovery Sport,2024
+Land Rover,Land Rover Discovery,2024
+Land Rover,Land Rover Defender,2024
+Lexus,Lexus UX 200,2022
+Lexus,Lexus TX 500h,2024
+Lexus,Lexus TX 350,2024
+Lexus,Lexus RZ 450e,2023
+Lexus,Lexus RX 450hL,2022
+Lexus,Lexus RX 450h,2022
+Lexus,Lexus RX 350L,2022
+Lexus,Lexus RX 350,2024
+Lexus,Lexus NX 450h+,2024
+Lexus,Lexus NX 350h,2024
+Lexus,Lexus NX 350,2024
+Lexus,Lexus NX 250,2024
+Lexus,Lexus GX 460,2023
+Lexus,Lexus RC F,2024
+Lexus,Lexus RC 350,2024
+Lexus,Lexus RC 300,2024
+Lexus,Lexus LC 500h,2024
+Lexus,Lexus LC 500,2024
+Lexus,Lexus IS 500,2024
+Lexus,Lexus IS 350,2024
+Lexus,Lexus IS 300,2024
+Lexus,Lexus ES 350,2024
+Lexus,Lexus ES 300h,2024
+Lexus,Lexus ES 250,2024
+Lincoln,Lincoln Navigator,2024
+Lincoln,Lincoln Nautilus,2024
+Lincoln,Lincoln Corsair,2024
+Lincoln,Lincoln Aviator,2024
+Acura,Acura MDX,2024
+Acura,Acura TLX,2023
+Acura,Acura NSX,2022
+Acura,Acura Integra,2024
+Acura,Acura ILX,2022
+Volkswagen,Volkswagen Tiguan,2024
+Toyota,Toyota Sienna,2024
+Tesla,Tesla Model Y,2023
+Tesla,Tesla Model X,2023
+Subaru,Subaru Solterra,2023
+Subaru,Subaru Outback,2024
+Subaru,Subaru Forester,2024
+Subaru,Subaru Crosstrek Hybrid,2023
+Subaru,Subaru Crosstrek,2024
+Subaru,Subaru Ascent,2024
+Subaru,Subaru WRX,2023
+Rolls-Royce,Rolls-Royce Cullinan,2023
+Rivian,Rivian R1T,2023
+Rivian,Rivian R1S,2023
+Rolls-Royce,Rolls-Royce Phantom,2023
+Rolls-Royce,Rolls-Royce Ghost,2023
+Subaru,Subaru Legacy,2024
+Subaru,Subaru Impreza,2024
+Subaru,Subaru BRZ,2024
+Tesla,Tesla Model S,2023
+Tesla,Tesla Model 3,2023
+Toyota,Toyota Tundra Hybrid,2024
+Toyota,Toyota Tundra,2024
+Toyota,Toyota Tacoma,2024
+Toyota,Toyota Venza,2024
+Toyota,Toyota Sequoia,2024
+Toyota,Toyota RAV4 Prime,2024
+Toyota,Toyota RAV4 Hybrid,2024
+Toyota,Toyota RAV4,2024
+Toyota,Toyota Highlander Hybrid,2024
+Toyota,Toyota Highlander,2024
+Toyota,Toyota Grand Highlander Hybrid,2024
+Toyota,Toyota Grand Highlander,2024
+Toyota,Toyota Corolla Cross Hybrid,2024
+Toyota,Toyota Corolla Cross,2024
+Toyota,Toyota C-HR,2022
+Toyota,Toyota bZ4X,2024
+Toyota,Toyota 4Runner,2024
+Toyota,Toyota Prius Prime,2024
+Toyota,Toyota Prius,2024
+Toyota,Toyota Mirai,2024
+Toyota,Toyota GR Supra,2024
+Toyota,Toyota GR Corolla,2024
+Toyota,Toyota GR86,2023
+Toyota,Toyota Crown,2024
+Toyota,Toyota Corolla Hybrid,2024
+Toyota,Toyota Corolla Hatchback,2024
+Toyota,Toyota Corolla,2024
+Toyota,Toyota Camry Hybrid,2024
+Toyota,Toyota Camry,2024
+Toyota,Toyota Avalon Hybrid,2022
+Toyota,Toyota Avalon,2022
+Volkswagen,Volkswagen Taos,2024
+Volkswagen,Volkswagen ID.4,2023
+Volkswagen,Volkswagen Atlas Cross Sport,2024
+Volkswagen,Volkswagen Atlas,2024
+Volkswagen,Volkswagen Passat,2022
+Volkswagen,Volkswagen Jetta,2023
+Volkswagen,Volkswagen Golf R,2024
+Volkswagen,Volkswagen Golf GTI,2024
+Volkswagen,Volkswagen Arteon,2024
+RAM,RAM ProMaster City,2022
+RAM,RAM ProMaster 3500 Window Van,2024
+Porsche,Porsche Macan,2024
+Porsche,Porsche Cayenne E-Hybrid Coupe,2024
+Polestar,Polestar 2,2024
+Porsche,Porsche Cayenne E-Hybrid,2024
+Porsche,Porsche Cayenne,2024
+Porsche,Porsche Taycan Cross Turismo,2024
+Porsche,Porsche Taycan,2024
+Porsche,Porsche Panamera Sport Turismo,2023
+Porsche,Porsche Panamera E-Hybrid Sport Turismo,2023
+Porsche,Porsche Panamera E-Hybrid,2023
+Porsche,Porsche 911,2024
+Porsche,Porsche 718 Spyder,2024
+Porsche,Porsche 718 Cayman,2024
+Porsche,Porsche 718 Boxster,2024
+RAM,RAM ProMaster 2500 Window Van,2024
+RAM,RAM ProMaster 2500,2023
+RAM,RAM ProMaster 1500,2023
+RAM,RAM 3500,2024
+RAM,RAM 2500,2024
+RAM,RAM 1500 Classic,2023
+RAM,RAM 1500,2024
+Nissan,Nissan Titan XD,2024
+Nissan,Nissan Titan,2024
+Mitsubishi,Mitsubishi Outlander Sport,2024
+MINI,MINI SE Countryman,2023
+MINI,MINI Countryman,2024
+MINI,MINI SE Hardtop,2024
+MINI,MINI Hardtop,2024
+MINI,MINI Convertible,2024
+MINI,MINI Clubman,2024
+Mitsubishi,Mitsubishi Outlander PHEV,2024
+Mitsubishi,Mitsubishi Outlander,2024
+Mitsubishi,Mitsubishi Eclipse Cross,2024
+Mitsubishi,Mitsubishi Mirage G4,2024
+Mitsubishi,Mitsubishi Mirage,2024
+Nissan,Nissan Frontier,2024
+Nissan,Nissan Rogue Sport,2022
+Nissan,Nissan Rogue,2024
+Nissan,Nissan Pathfinder,2024
+Nissan,Nissan Murano,2024
+Nissan,Nissan Kicks,2024
+Nissan,Nissan Armada,2024
+Nissan,Nissan ARIYA,2024
+Nissan,Nissan Z,2024
+Nissan,Nissan Versa,2024
+Nissan,Nissan Sentra,2024
+Nissan,Nissan Maxima,2023
+Nissan,Nissan Leaf,2024
+Nissan,Nissan GT-R,2024
+Nissan,Nissan Altima,2024
+Mercedes-Benz,Mercedes-Benz Sprinter 4500,2024
+McLaren,McLaren GT,2023
+Mazda,Mazda MX-30 EV,2023
+Mazda,Mazda MX-30,2022
+Mazda,Mazda CX-90 PHEV,2024
+Mazda,Mazda CX-90,2024
+Mazda,Mazda CX-9,2023
+Mazda,Mazda CX-50,2024
+Mazda,Mazda CX-5,2024
+Mazda,Mazda CX-30,2024
+Mazda,Mazda MX-5 Miata RF,2023
+Mazda,Mazda MX-5 Miata,2023
+Mazda,Mazda Mazda3,2024
+McLaren,McLaren 765LT,2022
+McLaren,McLaren 720S,2023
+Mercedes-Benz,Mercedes-Benz Sprinter 3500XD,2024
+Mercedes-Benz,Mercedes-Benz Sprinter 3500,2024
+Mercedes-Benz,Mercedes-Benz Sprinter 2500,2024
+Mercedes-Benz,Mercedes-Benz Sprinter 1500,2023
+Mercedes-Benz,Mercedes-Benz Metris,2023
+Mercedes-Benz,Mercedes-Benz Maybach GLS 600,2023
+Mercedes-Benz,Mercedes-Benz GLS 580,2024
+Mercedes-Benz,Mercedes-Benz GLS 450,2024
+Mercedes-Benz,Mercedes-Benz GLE 580,2024
+Mercedes-Benz,Mercedes-Benz GLE 450 Plug-In Hybrid,2024
+Mercedes-Benz,Mercedes-Benz GLE 450,2024
+Mercedes-Benz,Mercedes-Benz GLE 350,2024
+Mercedes-Benz,Mercedes-Benz GLC 300,2024
+Mercedes-Benz,Mercedes-Benz GLB 250,2024
+Mercedes-Benz,Mercedes-Benz GLA 250,2024
+Mercedes-Benz,Mercedes-Benz G-Class,2024
+Mercedes-Benz,Mercedes-Benz EQE 350+,2024
+Mercedes-Benz,Mercedes-Benz EQB 350,2024
+Mercedes-Benz,Mercedes-Benz EQB 300,2024
+Mercedes-Benz,Mercedes-Benz EQB 250,2024
+Mercedes-Benz,Mercedes-Benz AMG GLE 63,2023
+Mercedes-Benz,Mercedes-Benz AMG GLE 53,2024
+Mercedes-Benz,Mercedes-Benz AMG GLC 43,2024
+Mercedes-Benz,Mercedes-Benz AMG GLB 35,2023
+Mercedes-Benz,Mercedes-Benz AMG GLA 45,2023
+Mercedes-Benz,Mercedes-Benz AMG GLA 35,2023
+Mercedes-Benz,Mercedes-Benz AMG G 63,2024
+Mercedes-Benz,Mercedes-Benz S-Class,2024
+Mercedes-Benz,Mercedes-Benz Maybach S 580,2023
+Mercedes-Benz,Mercedes-Benz EQS 450+,2023
+Mercedes-Benz,Mercedes-Benz EQE 500,2024
+Mercedes-Benz,Mercedes-Benz EQE 350,2024
+Mercedes-Benz,Mercedes-Benz CLS 450,2023
+Mercedes-Benz,Mercedes-Benz CLA 250,2024
+Mercedes-Benz,Mercedes-Benz C-Class,2024
+Mercedes-Benz,Mercedes-Benz AMG SL 63,2023
+Mercedes-Benz,Mercedes-Benz AMG SL 55,2023
+Mercedes-Benz,Mercedes-Benz AMG SL 43,2024
+Mercedes-Benz,Mercedes-Benz AMG GT 63,2024
+Mercedes-Benz,Mercedes-Benz AMG GT 53,2024
+Mercedes-Benz,Mercedes-Benz AMG GT 43,2024
+Mercedes-Benz,Mercedes-Benz AMG EQE,2024
+Mercedes-Benz,Mercedes-Benz AMG E 63,2023
+Mercedes-Benz,Mercedes-Benz AMG E 53,2023
+Mercedes-Benz,Mercedes-Benz AMG CLA 45,2023
+Mercedes-Benz,Mercedes-Benz AMG CLA 35,2023
+Mercedes-Benz,Mercedes-Benz AMG C 63,2023
+Mercedes-Benz,Mercedes-Benz AMG C 43,2024
+Mercedes-Benz,Mercedes-Benz A-Class,2022
+Maserati,Maserati Levante,2024
+Lucid,Lucid Air,2023
+Lotus,Lotus Emira,2024
+Maserati,Maserati Grecale,2024
+Maserati,Maserati Quattroporte,2024
+Maserati,Maserati MC20,2023
+Maserati,Maserati GranTurismo,2024
+Maserati,Maserati Ghibli,2024
+BMW,BMW 228 Gran Coupe,2024
+BMW,BMW X3,2024
+BMW,BMW X2,2024
+BMW,BMW X1,2024
+BMW,BMW iX,2024
+BMW,BMW ALPINA XB7,2024
+BMW,BMW Z4,2024
+BMW,BMW M8 Gran Coupe,2024
+BMW,BMW M850 Gran Coupe,2024
+BMW,BMW M850,2024
+BMW,BMW M8,2024
+BMW,BMW M760,2022
+BMW,BMW M550,2023
+BMW,BMW M5,2023
+BMW,BMW M440 Gran Coupe,2024
+BMW,BMW M440,2024
+BMW,BMW M4,2024
+BMW,BMW M340,2024
+BMW,BMW XM,2024
+Bentley,Bentley Bentayga Hybrid,2023
+Bentley,Bentley Bentayga EWB,2023
+Audi,Audi SQ8,2024
+Aston Martin,Aston Martin DBX,2024
+Aston Martin,Aston Martin Vantage,2023
+Alfa Romeo,Alfa Romeo Tonale,2024
+Alfa Romeo,Alfa Romeo Stelvio,2024
+Alfa Romeo,Alfa Romeo Giulia,2024
+Aston Martin,Aston Martin DBS,2023
+Aston Martin,Aston Martin DB12,2024
+Aston Martin,Aston Martin DB11,2023
+Audi,Audi SQ7,2024
+Audi,Audi SQ5 Sportback,2024
+Audi,Audi SQ5,2024
+Audi,Audi RS Q8,2024
+Audi,Audi Q8 e-tron Sportback,2024
+Audi,Audi Q8 e-tron,2024
+Audi,Audi Q8,2024
+Audi,Audi Q7,2024
+Audi,Audi Q5 Sportback,2024
+Audi,Audi Q5,2024
+Audi,Audi Q4 e-tron Sportback,2024
+Audi,Audi Q4 e-tron,2024
+Audi,Audi e-tron S Sportback,2023
+Audi,Audi e-tron Sportback,2023
+Audi,Audi e-tron,2023
+Audi,Audi TTS,2023
+Audi,Audi TT RS,2022
+Audi,Audi TT,2023
+Audi,Audi S8,2024
+Audi,Audi S7,2024
+Audi,Audi S6,2024
+Audi,Audi S5,2024
+Audi,Audi S4,2024
+Audi,Audi S3,2024
+Audi,Audi RS e-tron GT,2024
+Audi,Audi RS 7,2024
+Audi,Audi RS 6 Avant,2024
+Audi,Audi RS 5,2024
+Audi,Audi RS 3,2024
+Audi,Audi R8,2023
+Audi,Audi e-tron S,2023
+Audi,Audi e-tron GT,2024
+Audi,Audi A8,2024
+Audi,Audi A7 e,2022
+Audi,Audi A7,2024
+Audi,Audi A6 allroad,2024
+Audi,Audi A6,2024
+Audi,Audi A5,2024
+Audi,Audi A4 allroad,2024
+Audi,Audi A4,2024
+Audi,Audi A3,2024
+Bentley,Bentley Bentayga,2023
+Bentley,Bentley Flying Spur Hybrid,2023
+Bentley,Bentley Flying Spur,2023
+Bentley,Bentley Continental GT,2023
+BMW,BMW X7,2024
+BMW,BMW X6 M,2024
+BMW,BMW X6,2024
+BMW,BMW X5 PHEV,2024
+BMW,BMW X5 M,2024
+BMW,BMW X5,2024
+BMW,BMW X4 M,2024
+BMW,BMW X4,2024
+BMW,BMW X3 M,2024
+BMW,BMW M3,2024
+BMW,BMW M240,2024
+BMW,BMW M235 Gran Coupe,2024
+BMW,BMW M2,2024
+BMW,BMW i7,2024
+BMW,BMW i4 Gran Coupe,2024
+BMW,BMW ALPINA B8 Gran Coupe,2024
+BMW,BMW ALPINA B7,2022
+BMW,BMW 840 Gran Coupe,2024
+BMW,BMW 840,2024
+BMW,BMW 760,2024
+BMW,BMW 750e,2024
+BMW,BMW 750,2022
+BMW,BMW 745e,2022
+BMW,BMW 740,2024
+BMW,BMW 540,2024
+BMW,BMW 530e,2023
+BMW,BMW 530,2024
+BMW,BMW 430 Gran Coupe,2024
+BMW,BMW 430,2024
+BMW,BMW 330e,2024
+BMW,BMW 330,2024
+BMW,BMW 230,2024
