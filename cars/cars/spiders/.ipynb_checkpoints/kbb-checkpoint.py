@@ -14,7 +14,7 @@ class KBBSpider(scrapy.Spider):
         car_make_pages = ['https://www.kbb.com/car-finder/?manufacturers=' + x[10:].replace('_', '-').replace('/','') + '&years=2023-2024' for x in car_makes]
         
         # shortening to just a few makes
-        # car_make_pages = car_make_pages[0:2]
+        car_make_pages = car_make_pages[0:1]
 
         for car_make in car_make_pages:
             if car_make: 
@@ -36,65 +36,31 @@ class KBBSpider(scrapy.Spider):
     
 # goal here is to yield specifications for each model
     def parse_model_page(self, response):
-        # name
         if response.css('div.css-1044rcd.eds0yfe0 h1.css-1l7l3br.e148eed13::text').get() != None:
             name = response.css('div.css-1044rcd.eds0yfe0 h1.css-1l7l3br.e148eed13::text').get()
         else: 
-            name = response.css('div.css-1044rcd.eds0yfe0 h1.css-54ra7u.e148eed13::text').get()
+            name = "N/A"
             
-        # reviews
-        # reviews = response.css('div.css-1c7qqqr::text').getall()
-        # if len(reviews) == 0: 
-        #     expert_review = "N/A"
-        #     consumer_review = "N/A"
-        # elif len(reviews) == 1: 
-        #     if response.css('div.css-1p1bpqh > div.css-hryd08::text').get() == 'Consumer':
-        #         expert_review = "N/A"
-        #         consumer_review = reviews[0]
-        #     else:
-        #         expert_review = reviews[0]
-        #         consumer_review = "N/A"
-        # else: 
-        #     expert_review = reviews[0]
-        #     consumer_review = reviews[1]
+        reviews = response.css('div.css-1c7qqqr::text').getall()
+        if len(reviews) == 0: 
+            expert_review = "N/A"
+            consumer_review = "N/A"
+        elif len(reviews) == 1: 
+            if response.css('div.css-1p1bpqh > div.css-hryd08::text').get() == 'Consumer':
+                expert_review = "N/A"
+                consumer_review = reviews[0]
+            else:
+                expert_review = reviews[0]
+                consumer_review = "N/A"
+        else: 
+            expert_review = reviews[0]
+            consumer_review = reviews[1]
         
-        # fuel
-        specs = response.css('div.css-tpw6mp.e1ma5l2g3::text').getall()
-        table = response.css('table.css-1b8ug1h.e1d7xkd00 > tbody.css-1dfwth1.e1d7xkd05')
-        rows = table.css('tr')
-        
-        
-        price = rows[0].css('td.css-d4cyqu.e1d7xkd04 > span::text').get()
-        fuel_type = rows[4].css('td.css-d4cyqu.e1d7xkd04 > div::text').get()
-        fuel_econ = rows[3].css('td.css-d4cyqu.e1d7xkd04 > div::text').get()
-        seating_capacity = rows[7].css('td.css-d4cyqu.e1d7xkd04::text').get()
-        
-        kbb_rating = rows[1].css('td.css-d4cyqu.e1d7xkd04 > div > span::text').get()
-        if kbb_rating == None:
-            kbb_rating = "N/A"
-        consumer_rating = rows[2].css('td.css-d4cyqu.e1d7xkd04 > div > span::text').get()
-        if consumer_rating == None:
-            consumer_rating = "N/A"
-        safety_rating = rows[6].css('td.css-d4cyqu.e1d7xkd04 > div > span::text').get()
-        if safety_rating == None: 
-            safety_rating = "N/A"
-            
-        horsepower = rows[9].css('td.css-d4cyqu.e1d7xkd04 > div::text').get()
-        engine = rows[10].css('td.css-d4cyqu.e1d7xkd04 > div::text').get()
-        wheeldrive = rows[11].css('td.css-d4cyqu.e1d7xkd04 > div::text').get()
         
         yield {
             "Name": name,
-            "Price": price, 
-            "Fuel Type": fuel_type, 
-            "Fuel Economy": fuel_econ, 
-            "Seating Capacity": seating_capacity, 
-            "Engine": engine,
-            "Drivetrain": wheeldrive, 
-            "Horsepower": horsepower,
-            "KBB Rating": kbb_rating, 
-            "Consumer Rating": consumer_rating,
-            "Safety Rating": safety_rating
+            "Expert Review": expert_review, 
+            "Consumer Review": consumer_review
         }
         
         # CAR NAME
@@ -123,10 +89,6 @@ class KBBSpider(scrapy.Spider):
         # css-zk8aw5 e19qstch11 <-- each href for the listed models have this div class
         # css-z66djy ewtqiv30 
         
-        #specs > div > div > div.css-1oi9yv0.eds0yfe0 > div > div > div > div > div > div:nth-child(1) > div > div > div > div:nth-child(1) > div.css-1d3w5wq.e181er9y1 > div > div.css-ni5epy.e151py7u0
         
-        # price 
-        # super-table > tbody > tr:nth-child(1) > td:nth-child(3) > span
+        
     
-    
-# NEXT STEP AS OF 5 PM ON SATURDAY 11/25 --> NEED TO ACCOUNT FOR IF THERE IS NO COMPARISON TABLE, SINCE THAT'S WHERE WE'RE GETTING ALL THE SPECS RIGHT NOW!

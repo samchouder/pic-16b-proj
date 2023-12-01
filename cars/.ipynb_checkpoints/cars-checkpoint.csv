@@ -1,0 +1,782 @@
+Model,Starting Price,Year
+Jaguar F-PACE              ,"$57,000",2024
+Jaguar I-PACE              ,"$72,000",2024
+Hyundai Santa Cruz              ,"$26,650",2024
+Honda Ridgeline              ,"$38,800",2023
+Jaguar XF              ,"$49,800",2024
+Volkswagen Tiguan              ,"$28,505",2024
+Jaguar E-PACE              ,"$49,500",2024
+Lincoln Navigator              ,"$110,750",2024
+Honda Odyssey              ,"$37,840",2024
+Volvo V60 Cross Country              ,"$49,750",2024
+Volvo C40 Recharge Pure Electric              ,"$53,600",2024
+Volvo XC40              ,"$40,100",2024
+Volvo S90              ,"$57,700",2024
+Volvo V60 Recharge Plug-In Hybrid              ,"$71,250",2024
+Volvo XC40 Recharge Pure Electric              ,"$48,250",2023
+Volvo S90 Recharge Plug-In Hybrid              ,"$65,650",2024
+Toyota Venza              ,"$34,920",2024
+Toyota Tundra Hybrid              ,"$57,625",2024
+Toyota RAV4 Prime              ,"$43,440",2024
+Toyota RAV4              ,"$28,475",2024
+Toyota Grand Highlander Hybrid              ,"$44,670",2024
+Toyota Highlander Hybrid              ,"$40,720",2024
+Toyota Grand Highlander              ,"$43,070",2024
+Toyota 4Runner              ,"$40,455",2024
+Toyota RAV4 Hybrid              ,"$31,475",2024
+Toyota GR Corolla              ,"$36,100",2024
+Toyota Corolla Hybrid              ,"$23,300",2024
+Toyota GR86              ,"$28,400",2023
+Toyota Tacoma              ,Priceunavailable,2024
+Toyota Corolla Hatchback              ,"$23,355",2024
+Toyota GR Supra              ,"$45,540",2024
+Toyota Corolla              ,"$21,900",2024
+Toyota Camry Hybrid              ,"$28,855",2024
+Toyota Prius              ,"$27,650",2024
+Toyota Prius Prime              ,"$32,675",2024
+Volvo S60              ,"$42,000",2024
+Volkswagen Atlas Cross Sport              ,"$36,715",2024
+Volkswagen Golf R              ,"$45,455",2024
+Volkswagen Atlas              ,"$37,725",2024
+Honda Passport              ,"$41,900",2024
+Volkswagen Arteon              ,"$43,010",2023
+Honda Civic Si              ,"$29,100",2024
+Honda CR-V Hybrid              ,Priceunavailable,2024
+Honda CR-V              ,Priceunavailable,2024
+Volkswagen Golf GTI              ,"$31,765",2024
+Honda Civic              ,"$23,950",2024
+Honda Accord              ,"$27,895",2024
+Hyundai Tucson Plug-In Hybrid              ,"$38,475",2024
+Hyundai Venue              ,"$19,800",2024
+INFINITI QX50              ,"$40,850",2024
+Hyundai NEXO              ,"$60,135",2023
+Hyundai Santa Fe              ,"$28,750",2023
+Hyundai Santa Fe Plug-In Hybrid              ,"$42,410",2023
+Hyundai Kona EV              ,"$33,550",2023
+Hyundai Kona              ,"$24,100",2024
+Hyundai Kona N              ,"$34,950",2023
+Hyundai Tucson Hybrid              ,"$32,325",2024
+Hyundai Sonata              ,"$25,100",2023
+Hyundai Sonata Hybrid              ,"$28,100",2023
+Hyundai Elantra HEV              ,"$24,550",2023
+Jaguar F-TYPE              ,"$113,000",2024
+Hyundai Elantra              ,"$21,475",2024
+Jeep Wagoneer L              ,"$65,545",2024
+Jeep Wrangler              ,"$32,095",2024
+Jeep Wrangler 4xe              ,"$49,995",2024
+Jeep Grand Wagoneer              ,"$111,045",2024
+Jeep Renegade              ,"$27,850",2023
+Hyundai Elantra N              ,"$32,900",2023
+Jeep Grand Wagoneer L              ,"$100,545",2024
+Hyundai IONIQ 6              ,"$37,500",2024
+Jeep Grand Cherokee 4xe              ,"$59,865",2024
+Lamborghini Huracan Tecnica              ,"$275,000",2023
+Lamborghini Huracan Sterrato              ,"$273,177",2023
+Lexus UX 250h              ,"$35,540",2024
+Lexus TX 500h              ,"$68,000",2024
+Lexus NX 450h+              ,"$58,755",2024
+Lamborghini Huracan EVO              ,"$206,295",2023
+Lexus NX 350              ,"$43,215",2024
+Lexus NX 250              ,"$39,455",2024
+Lexus LS 500              ,"$77,385",2023
+Lexus GX 460              ,"$58,875",2023
+Lexus LS 500h              ,"$113,485",2023
+Lexus IS 350              ,"$43,160",2023
+Lexus LC 500h              ,"$101,000",2024
+Lexus IS 300              ,"$40,085",2023
+Lexus ES 350              ,"$42,040",2024
+Lexus LC 500              ,"$105,200",2024
+Acura RDX              ,"$44,050",2024
+Acura Integra              ,"$31,500",2024
+Acura MDX              ,"$49,850",2024
+Tesla Model Y              ,"$43,990",2023
+Tesla Model 3              ,"$38,990",2023
+Tesla Model X              ,"$79,990",2023
+Subaru Forester              ,"$27,095",2024
+Tesla Model S              ,"$74,990",2023
+Subaru Ascent              ,"$34,195",2024
+Rolls-Royce Phantom              ,"$493,000",2023
+Subaru Crosstrek              ,"$24,995",2024
+Rivian R1T              ,"$73,000",2023
+Subaru Outback              ,"$28,895",2024
+RAM 1500 Classic              ,"$31,270",2023
+Subaru WRX              ,"$30,605",2023
+RAM ProMaster 2500 Window Van              ,"$56,495",2024
+RAM 1500              ,"$38,570",2024
+Subaru Impreza              ,"$22,995",2024
+Porsche Macan              ,"$60,900",2024
+Porsche Cayenne              ,"$102,100",2024
+Porsche Taycan Cross Turismo              ,"$101,900",2024
+Polestar 2              ,"$49,900",2024
+Porsche Cayenne E-Hybrid              ,"$91,700",2024
+RAM ProMaster 1500              ,"$44,170",2023
+Porsche Panamera E-Hybrid              ,"$109,000",2023
+Porsche Panamera E-Hybrid Sport Turismo              ,"$113,000",2023
+Porsche Taycan              ,"$111,700",2024
+Porsche 718 Spyder              ,"$160,700",2024
+Porsche 718 Cayman              ,"$162,000",2024
+MINI Countryman              ,"$32,650",2024
+MINI Hardtop              ,"$25,800",2024
+Maserati Levante              ,"$102,000",2024
+Mitsubishi Outlander Sport              ,"$23,695",2024
+Nissan Titan XD              ,"$51,930",2024
+GMC Savana 2500              ,"$40,700",2024
+Mercedes-Benz Sprinter 3500XD              ,"$58,500",2024
+Genesis GV80              ,"$57,450",2024
+Genesis GV60              ,"$52,000",2024
+Mercedes-Benz Sprinter 3500              ,"$52,800",2024
+Genesis Electrified G80              ,"$79,825",2023
+Genesis G70              ,"$39,400",2023
+GMC HUMMER EV              ,Priceunavailable,2024
+GMC Yukon              ,"$58,200",2024
+GMC Sierra 1500              ,"$37,700",2024
+Nissan Frontier              ,"$29,770",2024
+Mazda CX-90 PHEV              ,"$47,445",2024
+GMC Yukon XL              ,"$61,200",2024
+Mazda CX-90              ,"$39,595",2024
+GMC Terrain              ,"$28,700",2024
+Mazda CX-5              ,"$29,300",2024
+Mazda CX-50              ,"$30,300",2024
+Mazda MX-5 Miata RF              ,"$35,750",2023
+Mazda CX-9              ,"$38,750",2023
+Mazda MX-5 Miata              ,"$28,050",2023
+Nissan Armada              ,Priceunavailable,2024
+Nissan Murano              ,"$37,920",2024
+Nissan Versa              ,"$16,130",2024
+Nissan Leaf              ,"$28,140",2024
+Nissan Z              ,"$42,210",2024
+Nissan GT-R              ,"$120,990",2024
+Nissan Altima              ,"$25,730",2024
+Mercedes-Benz Sprinter 2500              ,"$49,900",2024
+Mercedes-Benz GLS 580              ,"$112,000",2024
+Mercedes-Benz Maybach GLS 600              ,"$170,000",2023
+Mercedes-Benz GLE 580              ,"$86,700",2024
+Mercedes-Benz GLE 450 Plug-In Hybrid              ,"$69,500",2024
+Mercedes-Benz GLE 450              ,"$69,500",2024
+Mercedes-Benz GLE 350              ,"$62,650",2024
+Mercedes-Benz GLB 250              ,"$44,450",2024
+Mercedes-Benz G-Class              ,Priceunavailable,2024
+Mercedes-Benz GLC 300              ,Priceunavailable,2024
+Mercedes-Benz EQB 300              ,"$56,900",2023
+Mercedes-Benz EQB 350              ,"$60,550",2023
+Mercedes-Benz AMG GLC 43              ,Priceunavailable,2024
+Mercedes-Benz AMG GLB 35              ,"$51,500",2023
+Mercedes-Benz AMG GLE 53              ,"$86,750",2024
+Mercedes-Benz EQE 350              ,"$77,900",2024
+Mercedes-Benz EQS 450+              ,"$104,400",2023
+Mercedes-Benz CLA 250              ,"$43,700",2024
+Mercedes-Benz EQE 500              ,"$85,900",2024
+Mercedes-Benz AMG G 63              ,Priceunavailable,2024
+Model,Starting Price,Year
+Cadillac CT4              ,"$34,595",2024
+Cadillac LYRIQ              ,"$57,195",2024
+Cadillac XT5              ,"$43,895",2024
+Cadillac XT4              ,"$37,895",2024
+Cadillac CT5-V              ,"$51,495",2024
+FIAT 500X              ,"$29,845",2023
+Cadillac Escalade              ,"$110,695",2024
+Cadillac CT5              ,"$38,395",2024
+Cadillac Escalade ESV              ,"$102,195",2024
+Ferrari SF90 Stradale              ,"$524,815",2023
+Ferrari 296 GTB              ,"$338,255",2023
+Ferrari Roma              ,"$243,360",2023
+Chrysler Voyager              ,"$36,560",2024
+Dodge Challenger              ,"$32,465",2023
+Chrysler Pacifica Hybrid              ,"$52,495",2024
+Chrysler Pacifica              ,"$38,425",2024
+Chrysler 300              ,"$35,515",2023
+Chevrolet Silverado EV              ,Priceunavailable,2024
+Chevrolet Express 3500              ,"$43,800",2024
+Chevrolet Silverado 3500              ,"$44,700",2024
+Chevrolet Express 2500              ,"$40,700",2024
+Chevrolet Trailblazer              ,"$23,100",2024
+Chevrolet Trax              ,"$20,400",2024
+Chevrolet Colorado              ,"$29,500",2024
+Chevrolet Tahoe              ,"$56,200",2024
+Chevrolet Bolt EUV              ,"$27,800",2023
+Chevrolet Silverado 2500              ,"$44,400",2024
+Chevrolet Blazer EV              ,"$51,800",2024
+Chevrolet Equinox              ,"$26,600",2024
+Chevrolet Suburban              ,"$59,200",2024
+Chevrolet Silverado 1500              ,"$36,800",2024
+Ferrari Portofino M              ,"$246,102",2023
+Ferrari F8 Tributo              ,"$280,000",2023
+Ferrari SF90 Spider              ,"$575,445",2023
+Chevrolet Blazer              ,"$35,400",2024
+Cadillac CT4-V              ,"$47,095",2024
+Chevrolet Corvette E-Ray              ,"$104,900",2024
+Cadillac XT6              ,"$48,795",2024
+Chevrolet Bolt EV              ,"$26,500",2023
+Chevrolet Malibu              ,"$25,100",2024
+Chevrolet Corvette              ,"$110,100",2024
+Chevrolet Camaro              ,"$30,900",2024
+Ferrari 812 GTS              ,"$429,815",2023
+Ferrari F8 Spider              ,"$324,342",2023
+Dodge Hornet              ,"$30,735",2024
+Ferrari 296 GTS              ,"$367,189",2023
+Dodge Charger              ,"$34,730",2023
+Dodge Durango              ,"$40,920",2024
+Ferrari 812 Competizione              ,"$598,513",2023
+Model,Starting Price,Year
+Lincoln Nautilus              ,"$50,415",2024
+Lincoln Navigator              ,"$110,750",2024
+Lincoln Aviator              ,"$53,340",2024
+Lincoln Navigator L              ,"$113,795",2024
+Land Rover Range Rover Velar              ,"$61,500",2024
+Kia Forte              ,"$19,790",2024
+Kia Telluride              ,"$35,990",2024
+Land Rover Range Rover Sport              ,"$118,200",2024
+Jeep Cherokee              ,"$37,695",2023
+Hyundai Santa Cruz              ,"$26,650",2024
+Hyundai Santa Fe Plug-In Hybrid              ,"$42,410",2023
+Hyundai Venue              ,"$19,800",2024
+Hyundai Tucson Plug-In Hybrid              ,"$38,475",2024
+Hyundai Tucson Hybrid              ,"$32,325",2024
+Lexus UX 250h              ,"$35,540",2024
+Volkswagen Tiguan              ,"$28,505",2024
+Toyota Tundra Hybrid              ,"$57,625",2024
+Toyota Sienna              ,"$37,185",2024
+Toyota Tundra              ,"$39,965",2024
+Hyundai Tucson              ,"$27,250",2024
+Toyota RAV4 Prime              ,"$43,440",2024
+Toyota Sequoia              ,"$60,875",2024
+Toyota Venza              ,"$34,920",2024
+Toyota RAV4 Hybrid              ,"$31,475",2024
+Toyota Tacoma              ,Priceunavailable,2024
+Toyota Grand Highlander Hybrid              ,"$44,670",2024
+Toyota Highlander Hybrid              ,"$40,720",2024
+Toyota Grand Highlander              ,"$43,070",2024
+Toyota RAV4              ,"$28,475",2024
+Toyota bZ4X              ,Priceunavailable,2024
+Toyota Prius Prime              ,"$32,675",2024
+Toyota Corolla Cross              ,"$23,610",2024
+Toyota Highlander              ,"$39,120",2024
+Toyota Mirai              ,Priceunavailable,2024
+Toyota 4Runner              ,"$40,455",2024
+Toyota GR Supra              ,"$45,540",2024
+Toyota Prius              ,"$27,650",2024
+Toyota GR Corolla              ,"$36,100",2024
+Jaguar I-PACE              ,"$72,000",2024
+Toyota GR86              ,"$28,400",2023
+Toyota Crown              ,"$40,050",2024
+Toyota Corolla Hybrid              ,"$23,300",2024
+Kia Carnival              ,"$33,200",2024
+Toyota Corolla Hatchback              ,"$23,355",2024
+Toyota Camry Hybrid              ,"$28,855",2024
+Toyota Corolla              ,"$21,900",2024
+Toyota Camry              ,"$26,420",2024
+Volkswagen Taos              ,"$23,995",2024
+Volkswagen Atlas Cross Sport              ,"$36,715",2024
+Volkswagen Golf R              ,"$45,455",2024
+Volkswagen Atlas              ,"$37,725",2024
+Volkswagen Golf GTI              ,"$31,765",2024
+Volkswagen Arteon              ,"$43,010",2023
+Volvo XC40 Recharge Pure Electric              ,"$48,250",2023
+Volvo XC60 Recharge Plug-In Hybrid              ,"$57,900",2024
+Volkswagen Jetta              ,"$20,655",2023
+Volvo XC90 Recharge Plug-In Hybrid              ,"$71,900",2024
+Volkswagen ID.4              ,"$38,995",2023
+Volvo V60 Recharge Plug-In Hybrid              ,"$71,250",2024
+Volvo V90 Cross Country              ,"$59,150",2024
+Volvo C40 Recharge Pure Electric              ,"$53,600",2024
+Model,Starting Price,Year
+Acura RDX              ,"$44,050",2024
+Acura TLX              ,"$40,050",2023
+Kia Carnival              ,"$33,200",2024
+Lincoln Navigator L              ,"$113,795",2024
+Jaguar E-PACE              ,"$49,500",2024
+Jaguar F-TYPE              ,"$113,000",2024
+Lexus UX 250h              ,"$35,540",2024
+Acura Integra              ,"$31,500",2024
+Jaguar I-PACE              ,"$72,000",2024
+Jaguar F-PACE              ,"$57,000",2024
+INFINITI QX60              ,"$49,650",2024
+INFINITI QX55              ,"$50,000",2024
+Lincoln Navigator              ,"$110,750",2024
+Hyundai Santa Cruz              ,"$26,650",2024
+Hyundai Tucson              ,"$27,250",2024
+INFINITI QX80              ,"$74,150",2024
+Jaguar XF              ,"$49,800",2024
+INFINITI QX50              ,"$40,850",2024
+Acura MDX              ,"$49,850",2024
+Hyundai Venue              ,"$19,800",2024
+Hyundai Tucson Plug-In Hybrid              ,"$38,475",2024
+Hyundai Tucson Hybrid              ,"$32,325",2024
+Hyundai Santa Fe Plug-In Hybrid              ,"$42,410",2023
+Hyundai NEXO              ,"$60,135",2023
+Hyundai Santa Fe HEV              ,"$36,210",2023
+Hyundai Palisade              ,"$36,400",2024
+Hyundai Kona              ,"$24,100",2024
+Hyundai Kona EV              ,"$33,550",2023
+Hyundai Kona N              ,"$34,950",2023
+Hyundai IONIQ 5              ,"$41,650",2024
+Hyundai Santa Fe              ,"$28,750",2023
+Hyundai Elantra N              ,"$32,900",2023
+Hyundai IONIQ 6              ,"$37,500",2024
+Hyundai Sonata              ,"$25,100",2023
+Hyundai Sonata Hybrid              ,"$28,100",2023
+Hyundai Elantra HEV              ,"$24,550",2023
+Volvo XC90 Recharge Plug-In Hybrid              ,"$71,900",2024
+Volvo XC40 Recharge Pure Electric              ,"$48,250",2023
+Volvo XC60 Recharge Plug-In Hybrid              ,"$57,900",2024
+Hyundai Elantra              ,"$21,475",2024
+Volvo XC40              ,"$40,100",2024
+Volvo V90 Cross Country              ,"$59,150",2024
+Volvo C40 Recharge Pure Electric              ,"$53,600",2024
+Volvo V60 Recharge Plug-In Hybrid              ,"$71,250",2024
+Volvo XC60              ,"$46,450",2024
+Volvo S60 Recharge Plug-In Hybrid              ,"$51,950",2024
+Volvo S60              ,"$42,000",2024
+Volvo S90              ,"$57,700",2024
+Volvo V60 Cross Country              ,"$49,750",2024
+Volvo S90 Recharge Plug-In Hybrid              ,"$65,650",2024
+INFINITI Q50              ,Priceunavailable,2024
+Lexus TX 500h              ,"$68,000",2024
+Lexus RZ 450e              ,"$58,500",2023
+Lexus TX 350              ,"$53,700",2024
+Lexus NX 450h+              ,"$58,755",2024
+Lexus NX 350h              ,"$43,465",2024
+Lexus NX 350              ,"$43,215",2024
+Lexus RX 350              ,"$48,600",2024
+Lexus NX 250              ,"$39,455",2024
+Lexus LS 500h              ,"$113,485",2023
+Lexus LS 500              ,"$77,385",2023
+Lexus GX 460              ,"$58,875",2023
+Lexus LC 500              ,"$105,200",2024
+Lexus LC 500h              ,"$101,000",2024
+Lexus RC F              ,"$67,045",2023
+Lexus IS 500              ,"$58,270",2023
+Lexus IS 350              ,"$43,160",2023
+Lexus IS 300              ,"$40,085",2023
+Lexus ES 350              ,"$42,040",2024
+Lexus ES 300h              ,"$43,440",2024
+Lexus ES 250              ,"$42,040",2024
+Jeep Gladiator              ,Priceunavailable,2024
+Jeep Wrangler 4xe              ,"$49,995",2024
+Jeep Wagoneer L              ,"$65,545",2024
+Jeep Wagoneer              ,"$62,545",2024
+Jeep Wrangler              ,"$32,095",2024
+Jeep Grand Wagoneer              ,"$111,045",2024
+Jeep Grand Cherokee L              ,"$41,535",2024
+Jeep Grand Cherokee 4xe              ,"$59,865",2024
+Jeep Renegade              ,"$27,850",2023
+Jeep Grand Wagoneer L              ,"$100,545",2024
+Jeep Compass              ,"$28,400",2024
+Kia Sportage Plug-In Hybrid              ,"$38,690",2023
+Kia Sportage Hybrid              ,"$27,490",2023
+Jeep Grand Cherokee              ,"$39,535",2024
+Jeep Cherokee              ,"$37,695",2023
+Kia Telluride              ,"$35,990",2024
+Kia Sorento Hybrid              ,"$36,690",2023
+Kia Seltos              ,"$24,390",2024
+Kia Sorento              ,"$30,090",2023
+Kia Niro EV              ,"$39,600",2024
+Kia Sportage              ,"$27,090",2024
+Kia Niro Plug-In Hybrid              ,"$34,290",2024
+Kia Sorento Plug-In Hybrid              ,"$49,990",2023
+Kia Stinger              ,"$36,690",2023
+Kia Niro              ,"$26,840",2024
+Kia Soul              ,"$19,990",2024
+Kia Rio              ,"$16,750",2023
+Kia K5              ,"$25,390",2024
+Kia Forte              ,"$19,790",2024
+Kia EV6              ,"$42,600",2024
+Lincoln Nautilus              ,"$50,415",2024
+Lincoln Corsair              ,"$38,730",2024
+Lamborghini Huracan Tecnica              ,"$275,000",2023
+Lotus Emira              ,"$93,900",2024
+Lamborghini Huracan STO              ,"$334,695",2023
+Lincoln Aviator              ,"$53,340",2024
+Lamborghini Huracan Sterrato              ,"$273,177",2023
+Lamborghini Huracan EVO              ,"$206,295",2023
+Land Rover Range Rover Velar              ,"$61,500",2024
+Land Rover Range Rover Sport              ,"$118,200",2024
+Land Rover Discovery Sport              ,"$48,900",2024
+Land Rover Range Rover              ,"$107,400",2024
+Land Rover Range Rover Evoque              ,"$49,900",2024
+Land Rover Defender              ,"$108,200",2024
+Land Rover Discovery              ,"$59,900",2024
+Subaru Crosstrek Hybrid              ,"$36,845",2023
+Subaru Solterra              ,"$44,995",2023
+Subaru Ascent              ,"$34,195",2024
+Subaru Outback              ,"$28,895",2024
+Subaru Forester              ,"$27,095",2024
+Toyota Tundra Hybrid              ,"$57,625",2024
+Subaru WRX              ,"$30,605",2023
+Subaru Legacy              ,"$24,895",2024
+Subaru Crosstrek              ,"$24,995",2024
+Toyota Tacoma              ,Priceunavailable,2024
+Toyota Venza              ,"$34,920",2024
+Toyota Sienna              ,"$37,185",2024
+Volkswagen Arteon              ,"$43,010",2023
+Rolls-Royce Ghost              ,"$348,500",2023
+Toyota Sequoia              ,"$60,875",2024
+Rolls-Royce Phantom              ,"$493,000",2023
+Rolls-Royce Cullinan              ,"$374,000",2023
+Rivian R1T              ,"$73,000",2023
+Toyota RAV4 Prime              ,"$43,440",2024
+Toyota Tundra              ,"$39,965",2024
+Rivian R1S              ,"$78,000",2023
+Toyota RAV4 Hybrid              ,"$31,475",2024
+Toyota RAV4              ,"$28,475",2024
+Toyota Grand Highlander Hybrid              ,"$44,670",2024
+Toyota Grand Highlander              ,"$43,070",2024
+Toyota bZ4X              ,Priceunavailable,2024
+Toyota Corolla Cross              ,"$23,610",2024
+Toyota Prius Prime              ,"$32,675",2024
+Toyota GR86              ,"$28,400",2023
+Toyota Mirai              ,Priceunavailable,2024
+Toyota GR Supra              ,"$45,540",2024
+Toyota Highlander              ,"$39,120",2024
+Toyota Highlander Hybrid              ,"$40,720",2024
+Toyota Prius              ,"$27,650",2024
+Toyota Corolla Hatchback              ,"$23,355",2024
+Toyota Crown              ,"$40,050",2024
+Toyota Corolla Hybrid              ,"$23,300",2024
+Toyota GR Corolla              ,"$36,100",2024
+Toyota Corolla              ,"$21,900",2024
+Toyota 4Runner              ,"$40,455",2024
+Toyota Camry Hybrid              ,"$28,855",2024
+Tesla Model Y              ,"$43,990",2023
+Tesla Model X              ,"$79,990",2023
+Subaru BRZ              ,"$28,595",2023
+Volkswagen ID.4              ,"$38,995",2023
+Toyota Camry              ,"$26,420",2024
+Volkswagen Tiguan              ,"$28,505",2024
+Volkswagen Taos              ,"$23,995",2024
+Tesla Model S              ,"$74,990",2023
+Volkswagen Atlas Cross Sport              ,"$36,715",2024
+Volkswagen Golf GTI              ,"$31,765",2024
+Volkswagen Atlas              ,"$37,725",2024
+Subaru Impreza              ,"$22,995",2024
+Volkswagen Golf R              ,"$45,455",2024
+Volkswagen Jetta              ,"$20,655",2023
+RAM ProMaster 3500 Window Van              ,"$60,430",2024
+Porsche Macan              ,"$60,900",2024
+RAM ProMaster 1500              ,"$44,170",2023
+Tesla Model 3              ,"$38,990",2023
+Porsche Taycan              ,"$111,700",2024
+Porsche Cayenne E-Hybrid              ,"$91,700",2024
+Porsche Cayenne E-Hybrid Coupe              ,"$95,700",2024
+RAM ProMaster 2500 Window Van              ,"$56,495",2024
+Porsche Taycan Cross Turismo              ,"$101,900",2024
+Porsche Panamera Sport Turismo              ,"$103,200",2023
+Polestar 2              ,"$49,900",2024
+Porsche 718 Spyder              ,"$160,700",2024
+Porsche Cayenne              ,"$102,100",2024
+RAM ProMaster 2500              ,"$48,455",2023
+Porsche Panamera E-Hybrid              ,"$109,000",2023
+Porsche Panamera E-Hybrid Sport Turismo              ,"$113,000",2023
+Porsche 718 Cayman              ,"$162,000",2024
+Porsche 718 Boxster              ,"$70,400",2024
+Porsche 911              ,"$114,400",2024
+RAM 3500              ,"$48,875",2024
+RAM 1500 Classic              ,"$31,270",2023
+RAM 2500              ,"$46,740",2024
+RAM 1500              ,"$38,570",2024
+Maserati Levante              ,"$102,000",2024
+Nissan Frontier              ,"$29,770",2024
+Mazda MX-30 EV              ,"$34,110",2023
+Lucid Air              ,"$125,600",2023
+Maserati Grecale              ,"$108,000",2024
+Mazda CX-90 PHEV              ,"$47,445",2024
+Mercedes-Benz Sprinter 1500              ,"$43,500",2023
+Honda Odyssey              ,"$37,840",2024
+Honda Ridgeline              ,"$38,800",2023
+Mercedes-Benz Sprinter 2500              ,"$49,900",2024
+Ford E-Transit              ,"$49,995",2024
+Mercedes-Benz Metris              ,"$39,600",2023
+Ford Transit-250              ,"$47,360",2024
+Ford Ranger              ,"$32,565",2024
+Mercedes-Benz Sprinter 3500XD              ,"$58,500",2024
+Mercedes-Benz Sprinter 3500              ,"$52,800",2024
+Mercedes-Benz Sprinter 4500              ,"$61,000",2024
+Honda Pilot              ,"$37,090",2024
+Ford Transit-350              ,"$48,615",2024
+Ford Maverick              ,"$23,400",2024
+Ford Transit-150              ,"$46,415",2024
+Ford F-450              ,"$104,030",2024
+Ford F-150 Lightning              ,"$49,995",2024
+Ford Mustang Mach-E              ,"$42,995",2023
+Ford Escape PHEV              ,"$40,500",2024
+Ford Expedition              ,"$54,555",2024
+Ford Expedition Max              ,"$58,555",2024
+Nissan Titan              ,"$45,770",2024
+Ford Escape              ,"$28,000",2024
+Maserati Ghibli              ,"$109,500",2024
+Nissan Titan XD              ,"$51,930",2024
+Ford Explorer              ,"$36,760",2024
+Ford F-350              ,"$100,280",2024
+Ford Edge              ,"$38,365",2024
+Ford Bronco Sport              ,"$31,230",2024
+Ford Bronco              ,"$39,130",2024
+Ford Transit Connect              ,"$34,100",2023
+Ford F-250              ,"$44,970",2024
+McLaren GT              ,"$204,990",2023
+Ford F-150              ,"$36,570",2024
+McLaren 720S              ,"$305,000",2023
+Ford Mustang              ,"$30,920",2024
+Mercedes-Benz GLS 580              ,"$112,000",2024
+Mercedes-Benz Maybach GLS 600              ,"$170,000",2023
+Mercedes-Benz GLE 450 Plug-In Hybrid              ,"$69,500",2024
+Mercedes-Benz GLS 450              ,"$87,000",2024
+Mercedes-Benz GLE 450              ,"$69,500",2024
+Mercedes-Benz GLE 580              ,"$86,700",2024
+Mercedes-Benz GLA 250              ,"$42,350",2024
+Mercedes-Benz GLE 350              ,"$62,650",2024
+Mercedes-Benz GLB 250              ,"$44,450",2024
+Mercedes-Benz GLC 300              ,Priceunavailable,2024
+Mercedes-Benz EQB 300              ,"$56,900",2023
+Mercedes-Benz EQE 350+              ,"$74,900",2024
+Mercedes-Benz G-Class              ,Priceunavailable,2024
+Mercedes-Benz EQE 350              ,"$77,900",2024
+Mercedes-Benz EQB 350              ,"$60,550",2023
+Mercedes-Benz EQB 250              ,"$52,750",2023
+Mercedes-Benz AMG GLE 63              ,"$120,000",2023
+Mercedes-Benz AMG GLE 53              ,"$86,750",2024
+Mercedes-Benz AMG GLC 43              ,Priceunavailable,2024
+Mercedes-Benz AMG GLB 35              ,"$51,500",2023
+Mercedes-Benz Maybach S 580              ,"$193,400",2023
+Mercedes-Benz AMG GLA 35              ,"$49,500",2023
+Mercedes-Benz AMG GLA 45              ,"$56,650",2023
+Mercedes-Benz EQS 450+              ,"$104,400",2023
+Mercedes-Benz AMG G 63              ,Priceunavailable,2024
+Mercedes-Benz S-Class              ,"$117,300",2024
+Mercedes-Benz AMG SL 63              ,"$183,000",2023
+Mercedes-Benz CLA 250              ,"$43,700",2024
+Mercedes-Benz EQE 500              ,"$85,900",2024
+Mercedes-Benz AMG SL 55              ,"$141,300",2023
+Mercedes-Benz AMG GT 63              ,"$153,350",2024
+Mercedes-Benz AMG GT 53              ,"$109,450",2024
+Mercedes-Benz AMG SL 43              ,Priceunavailable,2024
+Mercedes-Benz AMG GT 43              ,"$98,950",2024
+Mercedes-Benz AMG EQE              ,Priceunavailable,2024
+Mercedes-Benz C-Class              ,"$46,950",2024
+Mercedes-Benz AMG E 63              ,"$112,800",2023
+Mercedes-Benz AMG E 53              ,"$81,300",2023
+Mercedes-Benz AMG CLA 45              ,"$57,800",2023
+Mercedes-Benz AMG CLA 35              ,"$49,500",2023
+Mercedes-Benz CLS 450              ,"$76,500",2023
+Mercedes-Benz AMG C 63              ,"$81,850",2023
+Mercedes-Benz AMG C 43              ,Priceunavailable,2024
+GMC Savana 2500              ,"$40,700",2024
+GMC Savana 3500              ,"$43,800",2024
+GMC Canyon              ,"$36,000",2024
+GMC Sierra 3500              ,"$46,200",2024
+GMC Yukon XL              ,"$61,200",2024
+GMC Sierra 1500              ,"$37,700",2024
+GMC Sierra 2500              ,"$45,400",2024
+GMC Yukon              ,"$58,200",2024
+GMC HUMMER EV              ,Priceunavailable,2024
+GMC Terrain              ,"$28,700",2024
+GMC HUMMER EV SUV              ,Priceunavailable,2024
+Genesis GV80              ,"$57,450",2024
+Genesis G90              ,"$89,200",2024
+Genesis GV60              ,"$52,000",2024
+Genesis GV70              ,"$44,900",2024
+Genesis Electrified GV70              ,"$66,450",2024
+Genesis G80              ,"$54,150",2024
+Genesis G70              ,"$39,400",2023
+Honda Passport              ,"$41,900",2024
+Genesis Electrified G80              ,"$79,825",2023
+Honda HR-V              ,"$24,100",2024
+Honda Civic Si              ,"$29,100",2024
+Honda Civic Type R              ,"$43,795",2023
+Honda CR-V Hybrid              ,Priceunavailable,2024
+Honda CR-V              ,Priceunavailable,2024
+Honda Accord Hybrid              ,"$32,195",2024
+Mazda CX-90              ,"$39,595",2024
+Honda Civic              ,"$23,950",2024
+Honda Accord              ,"$27,895",2024
+Mazda CX-9              ,"$38,750",2023
+Mazda CX-50              ,"$30,300",2024
+Mazda CX-5              ,"$29,300",2024
+Maserati MC20              ,Priceunavailable,2023
+Maserati Quattroporte              ,"$139,000",2024
+Mazda CX-30              ,"$24,995",2024
+Mazda MX-5 Miata RF              ,"$35,750",2023
+Mazda MX-5 Miata              ,"$28,050",2023
+Nissan Rogue              ,Priceunavailable,2024
+Nissan Pathfinder              ,"$35,810",2024
+Maserati GranTurismo              ,"$174,000",2024
+Mazda Mazda3              ,"$24,170",2024
+Nissan Armada              ,Priceunavailable,2024
+Nissan ARIYA              ,"$43,190",2023
+Nissan Kicks              ,"$20,790",2024
+Nissan Murano              ,"$37,920",2024
+Nissan Versa              ,"$16,130",2024
+Nissan Z              ,"$42,210",2024
+Nissan Sentra              ,"$20,630",2024
+Nissan GT-R              ,"$120,990",2024
+Mitsubishi Outlander PHEV              ,"$40,345",2024
+Nissan Leaf              ,"$28,140",2024
+Nissan Altima              ,"$25,730",2024
+Nissan Maxima              ,"$38,340",2023
+Mitsubishi Eclipse Cross              ,Priceunavailable,2024
+Mitsubishi Outlander Sport              ,"$23,695",2024
+Mitsubishi Mirage              ,"$16,695",2024
+Mitsubishi Outlander              ,"$28,395",2024
+MINI SE Countryman              ,"$41,500",2023
+Mitsubishi Mirage G4              ,"$17,795",2024
+MINI SE Hardtop              ,"$30,900",2024
+MINI Countryman              ,"$32,650",2024
+MINI Clubman              ,"$34,050",2024
+MINI Hardtop              ,"$25,800",2024
+MINI Convertible              ,"$35,700",2024
+Ferrari Roma              ,"$243,360",2023
+Ferrari SF90 Spider              ,"$575,445",2023
+Ferrari SF90 Stradale              ,"$524,815",2023
+Ferrari Portofino M              ,"$246,102",2023
+Buick Envision              ,Priceunavailable,2024
+Buick Envista              ,"$22,400",2024
+Bentley Bentayga EWB              ,"$226,900",2023
+Buick Encore GX              ,"$25,600",2024
+Dodge Hornet              ,"$30,735",2024
+Dodge Durango              ,"$40,920",2024
+Aston Martin DBX              ,"$200,086",2024
+Bentley Continental GT              ,"$235,600",2023
+Chevrolet Express 3500              ,"$43,800",2024
+Aston Martin Vantage              ,"$143,900",2023
+Aston Martin DBS              ,"$330,600",2023
+Audi SQ5 Sportback              ,"$60,400",2024
+Aston Martin DB12              ,"$245,000",2024
+Audi SQ7              ,"$90,400",2024
+Audi SQ8              ,"$96,600",2024
+Audi Q8 e-tron Sportback              ,"$77,800",2024
+Audi Q8 e-tron              ,"$74,400",2024
+Audi SQ5              ,"$57,000",2024
+Audi RS Q8              ,"$125,800",2024
+Audi Q8              ,"$73,700",2024
+Audi e-tron S Sportback              ,"$90,800",2023
+Audi Q4 e-tron              ,"$49,800",2024
+Audi Q5 Sportback              ,"$51,500",2024
+Audi Q5              ,"$44,600",2024
+Audi Q7              ,"$59,500",2024
+Audi e-tron Sportback              ,"$74,000",2023
+Audi e-tron              ,"$70,800",2023
+Audi TTS              ,"$61,900",2023
+Audi S7              ,"$84,500",2024
+Audi S8              ,"$120,600",2024
+Audi S5              ,"$56,800",2024
+Audi S6              ,"$74,700",2024
+Audi TT              ,"$52,200",2023
+Audi S4              ,"$53,800",2024
+Audi S3              ,"$47,000",2024
+Audi RS 7              ,"$127,800",2024
+Audi RS 6 Avant              ,"$125,800",2024
+Audi RS e-tron GT              ,"$147,100",2024
+Audi RS 3              ,"$61,700",2024
+Audi RS 5              ,"$78,600",2024
+Audi R8              ,"$158,600",2023
+Audi e-tron GT              ,"$106,500",2024
+Bentley Bentayga Hybrid              ,Priceunavailable,2023
+Audi e-tron S              ,"$88,200",2023
+Audi A6 allroad              ,"$68,500",2024
+Audi A7              ,"$71,200",2024
+Audi A6              ,"$57,300",2024
+Audi A8              ,"$88,900",2024
+Audi A4 allroad              ,"$46,900",2024
+Audi A3              ,"$35,400",2024
+Audi A4              ,"$41,200",2024
+Audi A5              ,"$47,700",2024
+BMW XM              ,"$159,000",2024
+BMW X6 M              ,"$127,200",2024
+BMW X7              ,"$108,700",2024
+BMW X4 M              ,"$79,100",2024
+BMW X6              ,"$73,900",2024
+BMW X5 M              ,"$122,300",2024
+BMW X5 PHEV              ,"$72,500",2024
+BMW X5              ,"$65,200",2024
+BMW X3              ,"$46,900",2024
+BMW X4              ,"$55,000",2024
+BMW X3 M              ,"$75,500",2024
+BMW X2              ,"$42,000",2024
+BMW M8 Gran Coupe              ,"$138,800",2024
+BMW ALPINA XB7              ,"$149,400",2024
+BMW X1              ,"$40,500",2024
+BMW iX              ,"$111,500",2024
+BMW Z4              ,"$53,600",2024
+BMW M8              ,"$138,800",2024
+BMW M850              ,"$106,300",2024
+BMW M850 Gran Coupe              ,"$106,300",2024
+BMW M550              ,"$81,500",2023
+BMW M440 Gran Coupe              ,"$61,050",2024
+BMW M240              ,"$49,700",2024
+BMW M3              ,"$118,700",2024
+BMW M5              ,"$109,900",2023
+BMW M340              ,"$57,600",2024
+BMW M4              ,"$78,100",2024
+BMW M440              ,"$61,450",2024
+BMW ALPINA B8 Gran Coupe              ,"$149,300",2024
+BMW i4 Gran Coupe              ,"$52,200",2024
+BMW M235 Gran Coupe              ,"$48,300",2024
+BMW M2              ,"$63,200",2024
+BMW i7              ,"$105,700",2024
+BMW 840              ,"$100,500",2024
+BMW 840 Gran Coupe              ,"$90,800",2024
+BMW 760              ,"$121,300",2024
+BMW 750e              ,"$107,000",2024
+BMW 740              ,"$96,400",2024
+BMW 530e              ,"$57,600",2023
+BMW 530              ,"$57,900",2024
+BMW 430              ,"$49,900",2024
+BMW 430 Gran Coupe              ,"$48,300",2024
+BMW 540              ,"$64,900",2024
+BMW 330e              ,"$45,600",2024
+BMW 330              ,"$44,500",2024
+BMW 230              ,"$38,800",2024
+Chevrolet Express 2500              ,"$40,700",2024
+BMW 228 Gran Coupe              ,"$38,400",2024
+Aston Martin DB11              ,"$217,000",2023
+Chevrolet Silverado EV              ,Priceunavailable,2024
+Chevrolet Silverado 3500              ,"$44,700",2024
+Chevrolet Silverado 2500              ,"$44,400",2024
+Chevrolet Colorado              ,"$29,500",2024
+Chevrolet Silverado 1500              ,"$36,800",2024
+Chevrolet Trailblazer              ,"$23,100",2024
+Chevrolet Trax              ,"$20,400",2024
+FIAT 500X              ,"$29,845",2023
+Chevrolet Tahoe              ,"$56,200",2024
+Chevrolet Blazer EV              ,"$51,800",2024
+Chevrolet Equinox              ,"$26,600",2024
+Chevrolet Corvette E-Ray              ,"$104,900",2024
+Chevrolet Bolt EV              ,"$26,500",2023
+Chevrolet Suburban              ,"$59,200",2024
+Chevrolet Blazer              ,"$35,400",2024
+Chevrolet Malibu              ,"$25,100",2024
+Chevrolet Bolt EUV              ,"$27,800",2023
+Chevrolet Camaro              ,"$30,900",2024
+Bentley Flying Spur Hybrid              ,"$214,800",2023
+Chevrolet Corvette              ,"$110,100",2024
+Bentley Bentayga              ,"$197,300",2023
+Bentley Flying Spur              ,Priceunavailable,2023
+Cadillac XT5              ,"$43,895",2024
+Cadillac Escalade ESV              ,"$102,195",2024
+Cadillac XT6              ,"$48,795",2024
+Cadillac XT4              ,"$37,895",2024
+Cadillac LYRIQ              ,"$57,195",2024
+Cadillac Escalade              ,"$110,695",2024
+Cadillac CT5              ,"$38,395",2024
+Cadillac CT4-V              ,"$47,095",2024
+Cadillac CT5-V              ,"$51,495",2024
+Chrysler Pacifica Hybrid              ,"$52,495",2024
+Chrysler Voyager              ,"$36,560",2024
+Cadillac CT4              ,"$34,595",2024
+Chrysler Pacifica              ,"$38,425",2024
+Buick Enclave              ,"$43,900",2024
+Chrysler 300              ,"$35,515",2023
+Ferrari F8 Tributo              ,"$280,000",2023
+Dodge Charger              ,"$34,730",2023
+Ferrari F8 Spider              ,"$324,342",2023
+Dodge Challenger              ,"$32,465",2023
+Ferrari 812 Competizione              ,"$598,513",2023
+Ferrari 812 GTS              ,"$429,815",2023
+Ferrari 296 GTS              ,"$367,189",2023
+Ferrari 296 GTB              ,"$338,255",2023
+Alfa Romeo Tonale              ,"$42,995",2024
+Alfa Romeo Stelvio              ,"$45,375",2024
+Alfa Romeo Giulia              ,"$43,075",2024
+Model,Starting Price,Year
+Jaguar I-PACE              ,"$72,000",2024
+Volkswagen Jetta              ,"$20,655",2023
+Jeep Compass              ,"$28,400",2024

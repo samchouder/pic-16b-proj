@@ -7,7 +7,7 @@ class CarsSpider(scrapy.Spider):
     
     def parse(self, response): 
         car_make_pages = ['https://www.cars.com' + x for x in response.css('div#by-make-tab.sds-tabs__section a::attr(href)').getall()]
-        # car_make_pages = car_make_pages[20:25] #this has to be more than 1 url
+        # car_make_pages = car_make_pages[12:25] #this has to be more than 1 url
         
         for car_make in car_make_pages:
             yield scrapy.Request(car_make, callback=self.parse_make_page)
@@ -31,12 +31,11 @@ class CarsSpider(scrapy.Spider):
         make = response.css('ul.sds-breadcrumb.sds-breadcrumb--mobile-custom > li:nth-child(3) > a::text').get()
         model = make + " " + response.css('ul.sds-breadcrumb.sds-breadcrumb--mobile-custom > li:nth-child(4) > a::text').get()
         year = response.css('ul.sds-breadcrumb.sds-breadcrumb--mobile-custom > li:nth-child(6)::text').get()
-        starting_price = response.css('div.msrp.hubcap-type-heading-headline::text').get().replace('\n', '').replace(' ', '')
-        
+
         yield {
             "Make": make,
             "Model": model,
-            "Starting Price": starting_price, 
+            # "Starting Price": starting_price, 
             "Year": year
             # "Seating Capacity": seats, 
             # # gas, hybrid, electric (?)

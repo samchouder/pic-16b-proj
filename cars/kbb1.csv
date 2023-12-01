@@ -1,0 +1,12 @@
+Name,Price,Fuel Type,Fuel Economy,Seating Capacity,Engine,Drivetrain,Horsepower,KBB Rating,Consumer Rating,Safety Rating
+2024 Acura RDX,"$45,245",Gas,N/A,5,"4-Cyl, VTEC, Turbo, 2.0 Liter",AWD,272 @ 6500 RPM,4.5,4.0,4.0
+2023 Acura Integra,"$32,495",Gas,City 30/Hwy 37/Comb 33 MPG,5,"4-Cyl, Turbo, 1.5 Liter",FWD,200 @ 6000 RPM,4.0,N/A,5.0
+2023 Acura TLX,"$41,245",Gas,City 22/Hwy 31/Comb 25 MPG,5,"4-Cyl, Turbo, 2.0 Liter",FWD,272 @ 6500 RPM,4.2,4.5,5.0
+2023 Acura MDX,"$50,745",Gas,City 19/Hwy 26/Comb 22 MPG,7,"V6, i-VTEC, 3.5 Liter",FWD,290 @ 6200 RPM,4.5,4.3,5.0
+2023 Acura RDX,"$42,945",Gas,City 22/Hwy 28/Comb 24 MPG,5,"4-Cyl, VTEC, Turbo, 2.0 Liter",FWD,272 @ 6500 RPM,4.6,4.0,5.0
+2024 Acura Integra,"$32,695",Gas,City 30/Hwy 37/Comb 33 MPG,5,"4-Cyl, Turbo, 1.5 Liter",FWD,200 @ 6000 RPM,4.0,N/A,4.0
+2024 Acura MDX,"$51,045",Gas,City 19/Hwy 26/Comb 22 MPG,7,"V6, i-VTEC, 3.5 Liter",FWD,248 @ 5200 RPM,4.4,4.3,N/A
+2024 Alfa Romeo Stelvio,"$46,970",Gas,City 23/Hwy 28/Comb 25 MPG,5,"4-Cyl, Turbo, 2.0 Liter",RWD,280 @ 5200 RPM,3.9,4.4,5.0
+2023 Alfa Romeo Giulia,"$45,875",Gas,City 24/Hwy 33/Comb 27 MPG,5,"4-Cyl, Turbo, 2.0 Liter",RWD,201 HP,3.1,4.8,N/A
+2023 Alfa Romeo Stelvio,"$48,170",Gas,City 22/Hwy 29/Comb 25 MPG,5,"4-Cyl, Turbo, 2.0 Liter",RWD,228 @ 5000 RPM,3.9,4.5,5.0
+2024 Alfa Romeo Giulia,"$44,670",Gas,City 24/Hwy 33/Comb 27 MPG,5,"4-Cyl, Turbo, 2.0 Liter",RWD,261 HP,3.1,4.8,5.0
