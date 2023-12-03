@@ -89,7 +89,7 @@ app = Flask(__name__)
 # Initial scrape when the app starts
 car_dealer = scrape_cars()
 
-@app.route('/')
+@app.route('/home')
 def index():
     return render_template('index.html', cars=car_dealer.to_dict('records'))
 
@@ -112,6 +112,14 @@ def filter_results():
     ]
 
     return render_template('index.html', cars=filtered_cars.to_dict('records'))
+
+@app.route('/start')
+def start():
+    return render_template('start.html')
+
+@app.route('/seating')
+def seating():
+    return render_template('seating.html')
 
 if __name__ == '__main__':
     app.run(debug=True)

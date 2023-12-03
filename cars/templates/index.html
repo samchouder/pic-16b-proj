@@ -5,74 +5,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Your Car Recommendation App</title>
-    <style>
-        body {
-            font-family: 'Comic Sans MS', cursive, sans-serif;
-            background-color: #f4f4f4;
-            text-align: center;
-            padding: 20px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-
-        img {
-            max-width: 80%;
-            height: auto;
-            margin-bottom: 20px;
-        }
-
-        h1 {
-            color: #333;
-        }
-
-        form {
-            margin-bottom: 20px;
-        }
-
-        button {
-            background-color: #4CAF50;
-            color: white;
-            padding: 15px 20px;
-            font-size: 16px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-
-        button:hover {
-            background-color: #45a049;
-        }
-
-        table {
-            width: 80%;
-            border-collapse: collapse;
-            margin-top: 20px;
-        }
-
-        th, td {
-            border: 1px solid #ddd;
-            padding: 8px;
-            text-align: left;
-        }
-
-        th {
-            background-color: #4CAF50;
-            color: white;
-        }
-    </style>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
 </head>
 <body>
 
-<img src="https://pngimg.com/d/aston_martin_PNG14.png" alt="Car Image">
+    <h1>Let's Find a Car For You</h1>
 
-<h1>Welcome to Your Car Recommendation App</h1>
+    <img src="https://pngimg.com/d/aston_martin_PNG14.png" alt="Car Image">
 
+    <p align="center"><a href="start"><button>Get Started</button></a></p>
+<!--
 <form action="/filter" method="post">
-    <!-- Your filter form here -->
+    
     <label for="min_year">Minimum Year:</label>
     <input type="number" id="min_year" name="min_year" value="2020" required>
-    <!-- Add other input fields for filtering -->
+
 
     <button type="submit">Filter Results</button>
 </form>
@@ -102,6 +49,6 @@
         {% endfor %}
     </table>
 {% endif %}
-
+-->
 </body>
 </html>
