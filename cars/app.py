@@ -113,12 +113,18 @@ def filter_results():
 
     return render_template('index.html', cars=filtered_cars.to_dict('records'))
 
-@app.route('/start')
+@app.route('/start', methods=['GET', 'POST'])
 def start():
+    if request.method=='POST':
+        fuel_type = request.form.getlist('fuel_checkbox')
+        print(fuel_type)
     return render_template('start.html')
 
-@app.route('/seating')
+@app.route('/seating', methods=['GET', 'POST'])
 def seating():
+    if request.method == 'POST':
+        seats = request.form.getlist('seating_checkbox')
+        print(seats)
     return render_template('seating.html')
 
 if __name__ == '__main__':

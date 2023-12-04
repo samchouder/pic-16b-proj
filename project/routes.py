@@ -1,4 +1,4 @@
-from flask import Flask, render_template, redirect, url_for
+from flask import Flask, render_template, redirect, url_for, request
 from quiz import PopQuiz
 
 SECRET_KEY = 'this is a secret key'

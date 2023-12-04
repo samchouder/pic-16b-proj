@@ -10,14 +10,31 @@
 <body>
     <h1>How many seats do you need?</h1>
 
-    <p style="display:inline-block" align="center"><img class="carseat" src="static/images/car_seat.png"><button>3-4</button></p>
-    <p style="display:inline-block" align="center"><img class="carseat" src="static/images/car_seat.png"><button>6-8</button></p>
-    <p style="display:inline-block" align="center"><img class="carseat" src="static/images/car_seat.png"><button>8+</button></p>
-    
+    <form method="POST" action="seating">
+        <!-- <p style="display:inline-block" align="center"><img class="carseat" src="static/images/car_seat.png"><button>3-4</button></p>
+        <p style="display:inline-block" align="center"><img class="carseat" src="static/images/car_seat.png"><button>6-8</button></p> -->
+        <p align="center">
+            <img class="carseat" src="static/images/car_seat.png">
+            <input type="checkbox" value="3-4" name="seating_checkbox"> 3 - 4
+        </p>
+        <p align="center">
+            <img class="carseat" src="static/images/car_seat.png">
+            <input type="checkbox" value="5-6" name="seating_checkbox"> 5 - 6
+        </p>
+        <p align="center">
+            <img class="carseat" src="static/images/car_seat.png">
+            <input type="checkbox" value="7-8" name="seating_checkbox"> 7 - 8
+        </p>
+        <p align="center">
+            <img class="carseat" src="static/images/car_seat.png">
+            <input type="checkbox" value="8+" name="seating_checkbox"> 8+
+        </p>
+        <input type="submit" value="Next" href="">
+    </form>
+
 </body>
 <footer>
-    <p style="display:inline-block;">
+    <p style="display:inline-block">
         <a href="start"><button>Back</button></a> 
-        <a><button>Next</button></a>
     </p>
 </footer>
