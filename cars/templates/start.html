@@ -7,25 +7,23 @@
     <title>Your Car Recommendation App</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/start.css') }}">
 </head>
+
 <body>
     <h1>What fuel type are you looking for?</h1>
-    <form method='POST' action="seating">
-        <p>
-            <input type="checkbox" name="fuel_checkbox" value="gas">
-            <label for="gas">Gas</label><br>
-        </p>
-        <p>
-            <input type="checkbox" name="fuel_checkbox" value="hybrid">
-            <label for="hybrid">Hybrid</label><br>
-        </p>
-        <p>
-            <input type="checkbox" name="fuel_checkbox" value="electric">
-            <label for="electric">Electric</label><br>
-        </p>
+    <!-- right now, the form is not storing the submitted values -->
+    <form method='POST' action="start">
+        <input type="checkbox" value="Gas" name="fuel_checkbox">
+        <label for="gas">Gas</label><br>
+
+        <input type="checkbox" value="Hybrid" name="fuel_checkbox">
+        <label for="hybrid">Hybrid</label><br>
+
+        <input type="checkbox" value="Electric" name="fuel_checkbox" >
+        <label for="electric">Electric</label><br>
     
         <input type="submit" value="Next" href="seating">
     </form>
 </body>
 <footer>
-    <p align="left"><a href="home"><button>Back</button></a> </p>
+    <p align="left"><a href="/"><button>Back</button></a> </p>
 </footer>
