@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,18 +11,20 @@
 
 <body>
     <h1>What is your price range?</h1>
-    <form method="POST" action="price">
-        <label for="quantity">Minimum Price: </label>
-        <input type="number" id="min_price" name="price" min="1" max="200000"><br>
-        <label for="quantity">Maximum Price: </label>
-        <input type="number" id="max_price" name="price" min="1" max="200000"><br>
+    <form method="POST" action="{{ url_for('result') }}">
+        <label for="min_price">Minimum Price: </label>
+        <input type="number" id="min_price" name="min_price" min="1" max="200000" required><br>
+        <label for="max_price">Maximum Price: </label>
+        <input type="number" id="max_price" name="max_price" min="1" max="200000" required><br>
 
-        <input type="submit" value="Next" href="result">
+        <input type="submit" value="Next">
     </form>
 </body>
 
 <footer>
     <p style="display:inline-block">
-        <a href="seating"><button>Back</button></a> 
+        <a href="seating"><button>Back</button></a>
     </p>
 </footer>
+
+</html>

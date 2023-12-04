@@ -5,40 +5,41 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Car Recommendation App - Results</title>
+    <title>Your Car Recommendation App - Market</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/result.css') }}">
 </head>
 
 <body>
-    <h1>Here are the Top 10 cars that match your preferences:</h1>
-    <!-- Display your filtered DataFrame here, you can iterate through rows and columns -->
+    <h1>Here are the available cars in the market:</h1>
+    <footer>
+        <p style="display:inline-block">
+            <a href="/"><button>Return Home</button></a>
+        </p>
+    </footer>
     <table>
         <thead>
             <tr>
                 <th>Name</th>
+                <th>Year</th>
+                <th>Mileage</th>
+                <th>Rating</th>
+                <th>Review Count</th>
                 <th>Price</th>
-                <!-- Add more columns as needed -->
             </tr>
         </thead>
         <tbody>
             {% for car in cars %}
             <tr>
                 <td>{{ car['Name'] }}</td>
+                <td>{{ car['Year'] }}</td>
+                <td>{{ car['Mileage'] }}</td>
+                <td>{{ car['Rating'] }}</td>
+                <td>{{ car['Review Count'] }}</td>
                 <td>{{ car['Price'] }}</td>
-                <!-- Add more columns as needed -->
             </tr>
             {% endfor %}
         </tbody>
     </table>
 </body>
-
-<footer>
-    <p style="display:inline-block">
-        <a href="price"><button>Back</button></a>
-    </p>
-    <p style="display:inline-block">
-        <a href="market"><button>Next</button></a>
-    </p>
-</footer>
 
 </html>
