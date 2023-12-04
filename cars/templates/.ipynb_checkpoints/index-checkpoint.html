@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Car Recommendation App</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
+</head>
+<body>
+
+    <h1>Let's Find a Car For You</h1>
+
+    <img src="https://pngimg.com/d/aston_martin_PNG14.png" alt="Car Image">
+
+    <p align="center"><a href="start"><button>Get Started</button></a></p>
+<!--
+<form action="/filter" method="post">
+    
+    <label for="min_year">Minimum Year:</label>
+    <input type="number" id="min_year" name="min_year" value="2020" required>
+
+
+    <button type="submit">Filter Results</button>
+</form>
+
+{% if cars %}
+    <h2>Filtered Results</h2>
+    <table>
+        <tr>
+            <th>Number</th>
+            <th>Year</th>
+            <th>Name</th>
+            <th>Mileage</th>
+            <th>Rating</th>
+            <th>Review Count</th>
+            <th>Price</th>
+        </tr>
+        {% for car in cars %}
+            <tr>
+                <td>{{ car['Number'] }}</td>
+                <td>{{ car['Year'] }}</td>
+                <td>{{ car['Name'] }}</td>
+                <td>{{ car['Mileage'] }}</td>
+                <td>{{ car['Rating'] }}</td>
+                <td>{{ car['Review Count'] }}</td>
+                <td>{{ car['Price'] }}</td>
+            </tr>
+        {% endfor %}
+    </table>
+{% endif %}
+-->
+</body>
+</html>
