@@ -11,13 +11,14 @@ def reread_csv(data):
     data = pd.read_csv('cars/kbb_main.csv')
     return data
 
-def categorical_filter(df, column, conditions):
-    mask = df[column].isin(conditions)
-    filtered_df = df[mask]
+# without inputting a dataframe as an argument 
+def categorical_filter(column, conditions):
+    mask = data[column].isin(conditions)
+    filtered_df = data[mask]
     return filtered_df
 
-def numerical_filter(df, column, lower_bound, upper_bound):
-    filtered_df = df[(df[column] >= lower_bound) & (df[column] <= upper_bound)]
+def numerical_filter(column, lower_bound, upper_bound):
+    filtered_df = data[(data[column] >= lower_bound) & (data[column] <= upper_bound)]
     return filtered_df
 
 def extract_numbers(string_list):
@@ -63,10 +64,21 @@ def seating():
 
 @app.route('/price', methods=['GET', 'POST'])
 def price():
+    if request.method == 'POST':
+        prices = extract_numbers(request.form.getlist('price'))
+        session['min price'] = min(prices)
+        session['max price'] = max(prices)
+        print((session['min price'], session['max price']))
+        return redirect('/result')
     return render_template('price.html')
 
 @app.route('/result')
 def result():
+    df = pd.read_csv('cars/kbb_main.csv')
+    df = categorical_filter('Fuel Type', session['fuel'])
+    df = numerical_filter('Seating Capacity', session['min seat'], session['max seat'])
+    df = numerical_filter('Price', session['min price'], session['max price'])
+    print(df.head())
     return render_template('result.html')
 
 if __name__ == '__main__':
