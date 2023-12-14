@@ -11,13 +11,14 @@ app.config["SESSION_TYPE"] = "filesystem"
 Session(app)
 
 # Function to re-read the CSV file
-def reread_csv():
+def reading_csv():
     return pd.read_csv('cars/kbb_main.csv')
 
 # Function to filter data based on user input
 def categorical_filter(data, column, conditions):
     mask = data[column].isin(conditions)
     filtered_df = data[mask]
+    
     return filtered_df
 
 # Function to filter numerical data based on user input
@@ -167,23 +168,40 @@ def price():
 @app.route('/result', methods=['GET', 'POST'])
 def result():
     if request.method == 'POST':
-        min_year = session.get('min year', None)
-        max_year = session.get('max year', None)
-        min_price = session.get('min price', None)
-        max_price = session.get('max price', None)
-        min_rating = session.get('min rating', None)
+        # min_year = session.get('min year', None)
+        # max_year = session.get('max year', None)
+        # min_price = session.get('min price', None)
+        # max_price = session.get('max price', None)
+        # min_rating = session.get('min rating', None)
+        min_price = session.get('min price')
+        max_price = session.get('max price')
+        min_seats = session.get('min seats')
+        max_seats = session.get('max seats')
+        fuel = session.get('fuel')
+
+        print(min_price)
+        print(max_price)
+        print(min_seats)
+        print(max_seats)
+        print(fuel)
 
         # Load the data
-        df = reread_csv()
-
+        df = reading_csv()
+        print(df.head())
+        
         # Apply filters based on user input
-        if min_year and max_year:
-            df = numerical_filter(df, 'Year', min_year, max_year)
         if min_price and max_price:
             df = numerical_filter(df, 'Price', min_price, max_price)
-        if min_rating:
-            df['Rating'] = pd.to_numeric(df['Rating'], errors='coerce')
-            df = df[df['Rating'] >= min_rating]
+            print(df.head())
+        if min_seats and max_seats: 
+            df = numerical_filter(df, 'Seating Capacity', min_seats, max_seats)
+            print(df.head())
+        if fuel:
+            df = categorical_filter(df, 'Fuel Type', fuel)
+            print(df.head())
+        # if min_rating:
+        #     df['Rating'] = pd.to_numeric(df['Rating'], errors='coerce')
+        #     df = df[df['Rating'] >= min_rating]
 
         # Paginate the results
         per_page = 10
@@ -216,7 +234,6 @@ def previous_page():
 def market():
     # Scrape market data
     market_data = scrape_market_data()
-
     # Your market logic here
     return render_template('market.html', cars=market_data.to_dict('records'))
 
