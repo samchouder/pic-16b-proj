@@ -10,6 +10,14 @@
 
 <body>
     <h1>What fuel type are you looking for?</h1>
+    {% with messages = get_flashed_messages() %}
+    {% if messages %}
+        <ul class=flashes>
+        {% for message in messages %}
+            <p>{{ message }}</p>
+        {% endfor %}
+        </ul>
+    {% endif %} {% endwith %}
     <!-- right now, the form is not storing the submitted values -->
     <form method='POST' action="fuel">
         <input type="checkbox" value="Gas" name="fuel_checkbox">
