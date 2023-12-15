@@ -50,11 +50,50 @@ def scrape_market_data():
     rating = []
     review_count = []
     price = []
+    urls = []  
+
+    # Extracting Flask session variables
+    min_price = session.get('min price', None)
+    max_price = session.get('max price', None)
+    min_seats = session.get('min seats', None)
+    max_seats = session.get('max seats', None)
+    fuel = session.get('fuel', None)
+    drivetrain = session.get('drivetrain', None)
+
+    # Construct the base URL
+    base_url = 'https://www.cars.com/shopping/results/?dealer_id='
 
     # Loop through multiple pages of car listings
     for i in range(1, 11):
-        # Construct the URL for each page
-        website = f'https://www.cars.com/shopping/results/?page={i}&page_size=20&dealer_id=&list_price_max=&list_price_min=&makes[]=mercedes_benz&maximum_distance=20&mileage_max=&sort=best_match_desc&stock_type=cpo&year_max=&year_min=&zip='
+        # Construct the URL for each page with dynamic parameters
+        website = base_url.format(i)
+
+        # Add parameters to the URL based on Flask session inputs
+        if drivetrain:
+            for drivetrain_type in drivetrain:
+                if drivetrain_type == 'AWD':
+                    website += f'&drivetrain_slugs[]=all_wheel_drive'
+                if drivetrain_type == '4WD':
+                    website += f'&drivetrain_slugs[]=four_wheel_drive'
+                if drivetrain_type == 'FWD':
+                    website += f'&drivetrain_slugs[]=front_wheel_drive'
+                if drivetrain_type == 'RWD':
+                    website += f'&drivetrain_slugs[]=rear_wheel_drive'
+                if drivetrain_type == 'N/A':
+                    website += f''
+        if fuel:
+            for fuel_type in fuel:
+                if fuel == 'Electric':
+                    website += f'&fuel_slugs[]=electric'
+                if fuel_type == 'Gas':
+                    website += f'&fuel_slugs[]=gasoline'
+                if fuel == 'Hybrid':
+                    website += f'&fuel_slugs[]=hybrid'
+
+        if min_price and max_price:
+            website += f'&list_price_min={min_price}&list_price_max={max_price}'
+
+        website += f'&monthly_payment=1%2C120&page={i}&page_size=20&sort=best_match_desc&stock_type=cpo&zip=90024'
 
         # Send a request to the website
         response = requests.get(website)
@@ -113,9 +152,16 @@ def scrape_market_data():
             except:
                 price.append('n/a')
 
+            # Construct the URL for the car listing
+            car_url_relative = result.find('a', {'class': 'vehicle-card-link'})['href']
+            # Convert the relative URL to an absolute URL
+            car_url_absolute = f"https://www.cars.com{car_url_relative}"
+            # Append the absolute URL to the list
+            urls.append(car_url_absolute)
+
     # Create a DataFrame to store the scraped data
     car_dealer = pd.DataFrame({'Year': year, 'Name': name, 'Mileage': mileage, 'Rating': rating,
-                               'Review Count': review_count, 'Price': price})
+                               'Review Count': review_count, 'Price': price, 'URL': urls})
 
     # Data Cleaning
     # Convert the 'Year' column to integers and handle missing values ('n/a')
@@ -168,9 +214,13 @@ def seating():
 def drivetrain():
     if request.method == 'POST':
         drivetrain_values = request.form.getlist('drivetrain_checkbox')
-        session['drivetrain'] = drivetrain_values
-        return redirect('/price')
-    
+        if drivetrain_values:
+            session['drivetrain'] = drivetrain_values
+            print("Drivetrain Found" +str(session['drivetrain']))
+            return redirect('/price')
+        else:
+            flash("Please choose a drivetrain option.")
+            return redirect('/drivetrain')
     return render_template('drivetrain.html')
 
 # Route for the price page

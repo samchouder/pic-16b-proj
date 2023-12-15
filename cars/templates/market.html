@@ -25,6 +25,7 @@
                 <th>Rating</th>
                 <th>Review Count</th>
                 <th>Price</th>
+                <th>URLs</th>
             </tr>
         </thead>
         <tbody>
@@ -36,6 +37,7 @@
                 <td>{{ car['Rating'] }}</td>
                 <td>{{ car['Review Count'] }}</td>
                 <td>{{ car['Price'] }}</td>
+                <td><a href="{{ car['URL'] }}" target="_blank">View Listing</a></td>
             </tr>
             {% endfor %}
         </tbody>

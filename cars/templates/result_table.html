@@ -17,7 +17,11 @@
             <tr>
                 <th>Name</th>
                 <th>Price</th>
+                <th>Fuel Type</th>
+                <th>Seating Capacity</th>
+                <th>Drivetrain</th>
                 <th>Consumer Rating</th>
+                <th>Safety Rating</th>
                 <!-- Add more columns as needed -->
             </tr>
         </thead>
@@ -25,21 +29,29 @@
             {% for car in cars %}
             <tr>
                 <td>{{ car['Name'] }}</td>
-                <td>{{ car['Price'] }}</td>
+                <td>${{ car['Price'] }}</td>
+                <td>{{ car['Fuel Type'] }}</td>
+                <td>{{ car['Seating Capacity'] }}</td>
+                <td>{{ car['Drivetrain'] }}</td>
                 <td>{{ car['Consumer Rating'] }}</td>
+                <td>{{ car['Safety Rating'] }}</td>
+
+
                 <!-- Add more columns as needed -->
             </tr>
             {% endfor %}
         </tbody>
     </table>
 </body>
-
+<body>
+    <h1>Lets see if your we can find your car on the market!</h1>
+<body>
 <footer>
     <p style="display:inline-block">
         <a href="drivetrain"><button>Back</button></a>
     </p>
     <p style="display:inline-block">
-        <a href="market"><button>Next</button></a>
+        <a href="market"><button>To the Market!</button></a>
     </p>
 </footer>
 
