@@ -159,13 +159,22 @@ def seating():
             session['max seats'] = max_seats
             
             print("Seating Capacity Found " + str(session['min seats']) + " " + str(session['max seats']))
-            return redirect('/price')
+            return redirect('/drivetrain')
         else: 
             flash("Please choose a seating option.")
             return redirect('/seating')
 
     return render_template('seating.html')
 
+# Route for the drivetrain page
+@app.route('/drivetrain', methods=['GET', 'POST'])
+def drivetrain():
+    if request.method == 'POST':
+        drivetrain_values = request.form.getlist('drivetrain_checkbox')
+        session['drivetrain'] = drivetrain_values
+        return redirect('/price')
+    
+    return render_template('drivetrain.html')
 
 # Route for the price page
 @app.route('/price', methods=['GET', 'POST'])
@@ -180,27 +189,17 @@ def price():
             session['min price'] = min_price
             session['max price'] = max_price
             print(session['min price'] + session['max price'])
-            return redirect('/drivetrain')
+            return redirect('/result')
         else:
             flash("Please enter valid price values.")
             return redirect('/price')
 
     return render_template('price.html')
 
-
-# Route for the drivetrain page
-@app.route('/drivetrain', methods=['GET', 'POST'])
-def drivetrain():
-    if request.method == 'POST':
-        drivetrain_values = request.form.getlist('drivetrain_checkbox')
-        session['drivetrain'] = drivetrain_values
-        return redirect('/result')
-    
-    return render_template('drivetrain.html')
-
 # Route for the result page
 @app.route('/result')
 def result():
+    # Extracting Flask session variables
     min_price = session.get('min price', None)
     max_price = session.get('max price', None)
     min_seats = session.get('min seats', None)
@@ -208,6 +207,7 @@ def result():
     fuel = session.get('fuel', None)
     drivetrain = session.get('drivetrain', None)
 
+    # Checking to see what Flask session data is
     print("Flask Session Data: ")
     print(min_price)
     print(max_price)
@@ -216,11 +216,11 @@ def result():
     print(fuel)
     print(drivetrain)
 
-    # Load the data
+    # Read and load the data
     df = reading_csv()
     print(df.head())
     
-    # Apply filters based on user input
+    # Apply filters based on user input 
     if min_price and max_price:
         df = numerical_filter(df, 'Price', min_price, max_price)
         print(df.head())
@@ -234,15 +234,20 @@ def result():
         df = categorical_filter(df, 'Drivetrain', drivetrain)
         print(df.head())
 
-    # Paginate the results
-    per_page = 25
-    total_pages = -(-len(df) // per_page)  # Ceiling division to calculate total pages
-    current_page = session.get('current_page', 1)
-    start_index = (current_page - 1) * per_page
-    end_index = start_index + per_page
-    results_for_page = df.iloc[start_index:end_index]
+    print(len(df))
 
-    return render_template('result.html', cars=results_for_page.to_dict('records'), current_page=current_page, total_pages=total_pages)
+    if len(df) == 0: 
+        return render_template('no_result.html')
+    else: 
+        # Paginate the results
+        per_page = 25
+        total_pages = -(-len(df) // per_page)  # Ceiling division to calculate total pages
+        current_page = session.get('current_page', 1)
+        start_index = (current_page - 1) * per_page
+        end_index = start_index + per_page
+        results_for_page = df.iloc[start_index:end_index]
+
+    return render_template('result_table.html', cars=results_for_page.to_dict('records'), current_page=current_page, total_pages=total_pages)
 
 # Route for the market page
 @app.route('/market')
