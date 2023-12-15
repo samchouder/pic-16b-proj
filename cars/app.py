@@ -230,12 +230,9 @@ def result():
     if fuel:
         df = categorical_filter(df, 'Fuel Type', fuel)
         print(df.head())
-    if drivetrain:
-        df = categorical_filter(df, 'Drive Train', drivetrain)
-        print(df.head)
-    # if min_rating:
-    #     df['Rating'] = pd.to_numeric(df['Rating'], errors='coerce')
-    #     df = df[df['Rating'] >= min_rating]
+    if drivetrain: 
+        df = categorical_filter(df, 'Drivetrain', drivetrain)
+        print(df.head())
 
     # Paginate the results
     per_page = 25
