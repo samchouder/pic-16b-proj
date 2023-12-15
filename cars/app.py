@@ -30,9 +30,6 @@ def numerical_filter(data, column, lower_bound, upper_bound):
     # Make a copy of the original DataFrame
     filtered_df = data.copy()
 
-    # Convert the 'Price' column to numeric values
-    # filtered_df['Price'] = pd.to_numeric(filtered_df['Price'], errors='coerce')
-
     # Apply the filter
     filtered_df = filtered_df[(filtered_df[column] >= lower_bound) & (filtered_df[column] <= upper_bound)]
     return filtered_df
@@ -239,6 +236,9 @@ def result():
     if len(df) == 0: 
         return render_template('no_result.html')
     else: 
+        # Replacing NaN values with N/A
+        df['Consumer Rating'] = df['Consumer Rating'].fillna('N/A')
+
         # Paginate the results
         per_page = 25
         total_pages = -(-len(df) // per_page)  # Ceiling division to calculate total pages
