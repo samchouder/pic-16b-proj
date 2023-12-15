@@ -11,13 +11,13 @@
 
 <body>
     <h1>What is your price range?</h1>
-    <form method="POST" action="{{ url_for('result') }}">
+    <form method="POST" action="price">
         <label for="min_price">Minimum Price: </label>
         <input type="number" id="min_price" name="min_price" min="1" max="200000" required><br>
         <label for="max_price">Maximum Price: </label>
         <input type="number" id="max_price" name="max_price" min="1" max="200000" required><br>
 
-        <input type="submit" value="Next">
+        <input type="submit" value="Next" href="drivetrain">
     </form>
 </body>
 

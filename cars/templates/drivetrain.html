@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Car Recommendation App</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/drivetrain.css') }}">
+</head>
+
+<body>
+    <h1>What Drive Train are you looking for?</h1>
+    <!-- right now, the form is not storing the submitted values -->
+    <form method='POST' action="drivetrain">
+        <input type="checkbox" value="AWD" name="drivetrain_checkbox">
+        <label for="AWD">AWD</label><br>
+
+        <input type="checkbox" value="FWD" name="drivetrain_checkbox">
+        <label for="FWD">FWD</label><br>
+
+        <input type="checkbox" value="RWD" name="drivetrain_checkbox" >
+        <label for="RWD">RWD</label><br>
+    
+        <input type="submit" value="Next" href="results">
+    </form>
+</body>
+<footer>
+    <p align="left"><a href="price"><button>Back</button></a> </p>
+</footer>

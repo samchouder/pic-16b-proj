@@ -12,13 +12,17 @@ Session(app)
 
 # Function to re-read the CSV file
 def reading_csv():
-    return pd.read_csv('cars/kbb_main.csv')
+    df = pd.read_csv('cars/kbb_main.csv')
+    
+    # converting Price column to numerical data
+    df['Price'] = df['Price'].str.replace('$','')
+    df['Price'] = pd.to_numeric(df['Price'].str.replace(',', ''), errors='coerce')
+    return df
 
 # Function to filter data based on user input
 def categorical_filter(data, column, conditions):
     mask = data[column].isin(conditions)
     filtered_df = data[mask]
-    
     return filtered_df
 
 # Function to filter numerical data based on user input
@@ -27,7 +31,7 @@ def numerical_filter(data, column, lower_bound, upper_bound):
     filtered_df = data.copy()
 
     # Convert the 'Price' column to numeric values
-    filtered_df['Price'] = pd.to_numeric(filtered_df['Price'], errors='coerce')
+    # filtered_df['Price'] = pd.to_numeric(filtered_df['Price'], errors='coerce')
 
     # Apply the filter
     filtered_df = filtered_df[(filtered_df[column] >= lower_bound) & (filtered_df[column] <= upper_bound)]
@@ -133,6 +137,9 @@ def fuel():
     if request.method == 'POST':
         fuel_values = request.form.getlist('fuel_checkbox')
         session['fuel'] = fuel_values
+
+        print("Fuel Type found " + str(session['fuel']))
+
         return redirect("/seating")
     return render_template('fuel.html')
 
@@ -145,18 +152,28 @@ def seating():
         max_seats = max(seat_values)
         session['min seats'] = min_seats
         session['max seats'] = max_seats
+
+        print("Seating Capacity Found " + str(session['min seats']) + " " + str(session['max seats']))
+
         return redirect('/price')
     return render_template('seating.html')
+
 
 # Route for the price page
 @app.route('/price', methods=['GET', 'POST'])
 def price():
     if request.method == 'POST':
-        prices = extract_numbers(request.form.getlist('price'))
+        # prices = extract_numbers(request.form.getlist('price_input'))
+        min_price = int(request.form.get('min_price'))
+        max_price = int(request.form.get('max_price'))
+        print("Price Range Found " + str(min_price) + " " + str(max_price))
 
-        if prices:
-            session['min price'] = min(prices)
-            session['max price'] = max(prices)
+        if min_price and max_price:
+            # session['min price'] = int(prices[0])
+            # session['max price'] = int(prices[1])
+            session['min price'] = min_price
+            session['max price'] = max_price
+            print(session['min price'] + session['max price'])
             return redirect('/result')
         else:
             flash("Please enter valid price values.")
@@ -164,70 +181,61 @@ def price():
 
     return render_template('price.html')
 
-# Route for the result page
-@app.route('/result', methods=['GET', 'POST'])
-def result():
+
+# Route for the drivetrain page
+@app.route('/drivetrain', methods=['GET', 'POST'])
+def drivetrain():
     if request.method == 'POST':
-        # min_year = session.get('min year', None)
-        # max_year = session.get('max year', None)
-        # min_price = session.get('min price', None)
-        # max_price = session.get('max price', None)
-        # min_rating = session.get('min rating', None)
-        min_price = session.get('min price')
-        max_price = session.get('max price')
-        min_seats = session.get('min seats')
-        max_seats = session.get('max seats')
-        fuel = session.get('fuel')
+        drivetrain_values = request.form.getlist('drivetrain_checkbox')
+        session['drivetrain'] = drivetrain_values
+        return redirect('/results')
+    
+    return render_template('drivetrain.html')
 
-        print(min_price)
-        print(max_price)
-        print(min_seats)
-        print(max_seats)
-        print(fuel)
 
-        # Load the data
-        df = reading_csv()
+# Route for the result page
+@app.route('/result')
+def result():
+    min_price = session.get('min price', None)
+    max_price = session.get('max price', None)
+    min_seats = session.get('min seats', None)
+    max_seats = session.get('max seats', None)
+    fuel = session.get('fuel', None)
+
+    print("Flask Session Data: ")
+    print(min_price)
+    print(max_price)
+    print(min_seats)
+    print(max_seats)
+    print(fuel)
+
+    # Load the data
+    df = reading_csv()
+    print(df.head())
+    
+    # Apply filters based on user input
+    if min_price and max_price:
+        df = numerical_filter(df, 'Price', min_price, max_price)
         print(df.head())
-        
-        # Apply filters based on user input
-        if min_price and max_price:
-            df = numerical_filter(df, 'Price', min_price, max_price)
-            print(df.head())
-        if min_seats and max_seats: 
-            df = numerical_filter(df, 'Seating Capacity', min_seats, max_seats)
-            print(df.head())
-        if fuel:
-            df = categorical_filter(df, 'Fuel Type', fuel)
-            print(df.head())
-        # if min_rating:
-        #     df['Rating'] = pd.to_numeric(df['Rating'], errors='coerce')
-        #     df = df[df['Rating'] >= min_rating]
+    if min_seats and max_seats: 
+        df = numerical_filter(df, 'Seating Capacity', min_seats, max_seats)
+        print(df.head())
+    if fuel:
+        df = categorical_filter(df, 'Fuel Type', fuel)
+        print(df.head())
+    # if min_rating:
+    #     df['Rating'] = pd.to_numeric(df['Rating'], errors='coerce')
+    #     df = df[df['Rating'] >= min_rating]
 
-        # Paginate the results
-        per_page = 10
-        total_pages = -(-len(df) // per_page)  # Ceiling division to calculate total pages
-        current_page = session.get('current_page', 1)
-        start_index = (current_page - 1) * per_page
-        end_index = start_index + per_page
-        results_for_page = df.iloc[start_index:end_index]
+    # Paginate the results
+    per_page = 25
+    total_pages = -(-len(df) // per_page)  # Ceiling division to calculate total pages
+    current_page = session.get('current_page', 1)
+    start_index = (current_page - 1) * per_page
+    end_index = start_index + per_page
+    results_for_page = df.iloc[start_index:end_index]
 
-        return render_template('result.html', cars=results_for_page.to_dict('records'), current_page=current_page,
-                               total_pages=total_pages)
-
-    return render_template('result.html', cars=[])
-
-# Add routes for next and back buttons
-@app.route('/next', methods=['GET'])
-def next_page():
-    # Increment the current page in the session
-    session['current_page'] = session.get('current_page', 1) + 1
-    return redirect('/result')
-
-@app.route('/back', methods=['GET'])
-def previous_page():
-    # Decrement the current page in the session
-    session['current_page'] = max(session.get('current_page', 1) - 1, 1)
-    return redirect('/price')
+    return render_template('result.html', cars=results_for_page.to_dict('records'), current_page=current_page, total_pages=total_pages)
 
 # Route for the market page
 @app.route('/market')
