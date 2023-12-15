@@ -194,7 +194,7 @@ def drivetrain():
     if request.method == 'POST':
         drivetrain_values = request.form.getlist('drivetrain_checkbox')
         session['drivetrain'] = drivetrain_values
-        return redirect('/results')
+        return redirect('/result')
     
     return render_template('drivetrain.html')
 
