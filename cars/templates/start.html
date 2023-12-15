@@ -7,23 +7,48 @@
     <title>Your Car Recommendation App</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/start.css') }}">
 </head>
-
 <body>
-    <h1>What fuel type are you looking for?</h1>
-    <!-- right now, the form is not storing the submitted values -->
-    <form method='POST' action="start">
-        <input type="checkbox" value="Gas" name="fuel_checkbox">
-        <label for="gas">Gas</label><br>
 
-        <input type="checkbox" value="Hybrid" name="fuel_checkbox">
-        <label for="hybrid">Hybrid</label><br>
+    <h1>Let's Find a Car For You</h1>
 
-        <input type="checkbox" value="Electric" name="fuel_checkbox" >
-        <label for="electric">Electric</label><br>
+    <img src="https://pngimg.com/d/aston_martin_PNG14.png" alt="Car Image">
+
+    <p align="center"><a href="start"><button>Get Started</button></a></p>
+<!--
+<form action="/filter" method="post">
     
-        <input type="submit" value="Next" href="seating">
-    </form>
+    <label for="min_year">Minimum Year:</label>
+    <input type="number" id="min_year" name="min_year" value="2020" required>
+
+
+    <button type="submit">Filter Results</button>
+</form>
+
+{% if cars %}
+    <h2>Filtered Results</h2>
+    <table>
+        <tr>
+            <th>Number</th>
+            <th>Year</th>
+            <th>Name</th>
+            <th>Mileage</th>
+            <th>Rating</th>
+            <th>Review Count</th>
+            <th>Price</th>
+        </tr>
+        {% for car in cars %}
+            <tr>
+                <td>{{ car['Number'] }}</td>
+                <td>{{ car['Year'] }}</td>
+                <td>{{ car['Name'] }}</td>
+                <td>{{ car['Mileage'] }}</td>
+                <td>{{ car['Rating'] }}</td>
+                <td>{{ car['Review Count'] }}</td>
+                <td>{{ car['Price'] }}</td>
+            </tr>
+        {% endfor %}
+    </table>
+{% endif %}
+-->
 </body>
-<footer>
-    <p align="left"><a href="/"><button>Back</button></a> </p>
-</footer>
+</html>

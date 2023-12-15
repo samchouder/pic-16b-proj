@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Car Recommendation App</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/fuel.css') }}">
+</head>
+
+<body>
+    <h1>What fuel type are you looking for?</h1>
+    <!-- right now, the form is not storing the submitted values -->
+    <form method='POST' action="start">
+        <input type="checkbox" value="Gas" name="fuel_checkbox">
+        <label for="gas">Gas</label><br>
+
+        <input type="checkbox" value="Hybrid" name="fuel_checkbox">
+        <label for="hybrid">Hybrid</label><br>
+
+        <input type="checkbox" value="Electric" name="fuel_checkbox" >
+        <label for="electric">Electric</label><br>
+    
+        <input type="submit" value="Next" href="seating">
+    </form>
+</body>
+<footer>
+    <p align="left"><a href="/"><button>Back</button></a> </p>
+</footer>

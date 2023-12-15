@@ -124,17 +124,17 @@ def scrape_market_data():
 
 # Route for the home page
 @app.route('/')
-def index():
-    return render_template('index.html')
-
-# Route for the starting page
-@app.route('/start', methods=['GET', 'POST'])
 def start():
+    return render_template('start.html')
+
+# Route for the fueling page
+@app.route('/fuel', methods=['GET', 'POST'])
+def fuel():
     if request.method == 'POST':
         fuel_values = request.form.getlist('fuel_checkbox')
         session['fuel'] = fuel_values
         return redirect("/seating")
-    return render_template('start.html')
+    return render_template('fuel.html')
 
 # Route for the seating page
 @app.route('/seating', methods=['GET', 'POST'])
