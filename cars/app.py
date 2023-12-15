@@ -136,11 +136,15 @@ def start():
 def fuel():
     if request.method == 'POST':
         fuel_values = request.form.getlist('fuel_checkbox')
-        session['fuel'] = fuel_values
 
         print("Fuel Type found " + str(session['fuel']))
 
-        return redirect("/seating")
+        if fuel_values:
+            session['fuel'] = fuel_values
+            return redirect("/seating")
+        else:
+            flash("Please select an fuel option.")
+            return redirect('/fuel')
     return render_template('fuel.html')
 
 # Route for the seating page
@@ -174,7 +178,7 @@ def price():
             session['min price'] = min_price
             session['max price'] = max_price
             print(session['min price'] + session['max price'])
-            return redirect('/result')
+            return redirect('/drivetrain')
         else:
             flash("Please enter valid price values.")
             return redirect('/price')
@@ -187,11 +191,14 @@ def price():
 def drivetrain():
     if request.method == 'POST':
         drivetrain_values = request.form.getlist('drivetrain_checkbox')
-        session['drivetrain'] = drivetrain_values
-        return redirect('/results')
-    
+        print("Drive Train found" + str(session[drivetrain_values]))
+        if drivetrain_values:
+            session['drivetrain'] = drivetrain_values
+            return redirect('/result')
+        else:
+            flash("Please select a drivetrain option.")
+            return redirect('/drivetrain')
     return render_template('drivetrain.html')
-
 
 # Route for the result page
 @app.route('/result')
@@ -201,6 +208,7 @@ def result():
     min_seats = session.get('min seats', None)
     max_seats = session.get('max seats', None)
     fuel = session.get('fuel', None)
+    drivetrain = session.get('drivetrain', None)
 
     print("Flask Session Data: ")
     print(min_price)
@@ -208,6 +216,7 @@ def result():
     print(min_seats)
     print(max_seats)
     print(fuel)
+    print(drivetrain)
 
     # Load the data
     df = reading_csv()
@@ -223,6 +232,9 @@ def result():
     if fuel:
         df = categorical_filter(df, 'Fuel Type', fuel)
         print(df.head())
+    if drivetrain:
+        df = categorical_filter(df, 'Drive Train', drivetrain)
+        print(df.head)
     # if min_rating:
     #     df['Rating'] = pd.to_numeric(df['Rating'], errors='coerce')
     #     df = df[df['Rating'] >= min_rating]
