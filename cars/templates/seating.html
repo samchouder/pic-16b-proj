@@ -7,8 +7,18 @@
     <title>Your Car Recommendation App</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/seating.css') }}">
 </head>
+
 <body>
     <h1>How many seats do you need?</h1>
+
+    {% with messages = get_flashed_messages() %}
+    {% if messages %}
+        <ul class=flashes>
+        {% for message in messages %}
+            <p>{{ message }}</p>
+        {% endfor %}
+        </ul>
+    {% endif %} {% endwith %}
 
     <form method="POST" action="seating">
         <!-- <p style="display:inline-block" align="center"><img class="carseat" src="static/images/car_seat.png"><button>3-4</button></p>
@@ -29,7 +39,7 @@
             <img class="carseat" src="static/images/car_seat.png">
             <input type="checkbox" value="8+" name="seating_checkbox"> 8+
         </p>
-        <input type="submit" value="Next" href="'price">
+        <input type="submit" value="Next">
     </form>
 
 </body>

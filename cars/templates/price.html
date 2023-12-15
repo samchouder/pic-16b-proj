@@ -9,8 +9,17 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='css/price.css') }}">
 </head>
 
+
 <body>
     <h1>What is your price range?</h1>
+    {% with messages = get_flashed_messages() %}
+    {% if messages %}
+        <ul class=flashes>
+        {% for message in messages %}
+            <p>{{ message }}</p>
+        {% endfor %}
+        </ul>
+    {% endif %} {% endwith %}
     <form method="POST" action="price">
         <label for="min_price">Minimum Price: </label>
         <input type="number" id="min_price" name="min_price" min="1" max="200000" required><br>

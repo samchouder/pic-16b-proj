@@ -10,6 +10,14 @@
 
 <body>
     <h1>What Drive Train are you looking for?</h1>
+    {% with messages = get_flashed_messages() %}
+    {% if messages %}
+        <ul class=flashes>
+        {% for message in messages %}
+            <p>{{ message }}</p>
+        {% endfor %}
+        </ul>
+    {% endif %} {% endwith %}
     <!-- right now, the form is not storing the submitted values -->
     <form method='POST' action="drivetrain">
         <input type="checkbox" value="AWD" name="drivetrain_checkbox">
@@ -21,7 +29,7 @@
         <input type="checkbox" value="RWD" name="drivetrain_checkbox" >
         <label for="RWD">RWD</label><br>
     
-        <input type="submit" value="Next" href="results">
+        <input type="submit" value="Next" href="result">
     </form>
 </body>
 <footer>

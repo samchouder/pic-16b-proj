@@ -136,11 +136,14 @@ def start():
 def fuel():
     if request.method == 'POST':
         fuel_values = request.form.getlist('fuel_checkbox')
-        session['fuel'] = fuel_values
+        if fuel_values: 
+            session['fuel'] = fuel_values
+            print("Fuel Type found " + str(session['fuel']))
+            return redirect("/seating")
+        else: 
+            flash("Please choose a fuel option.")
+            return redirect('/fuel')
 
-        print("Fuel Type found " + str(session['fuel']))
-
-        return redirect("/seating")
     return render_template('fuel.html')
 
 # Route for the seating page
@@ -148,14 +151,19 @@ def fuel():
 def seating():
     if request.method == 'POST':
         seat_values = extract_numbers(request.form.getlist('seating_checkbox'))
-        min_seats = min(seat_values)
-        max_seats = max(seat_values)
-        session['min seats'] = min_seats
-        session['max seats'] = max_seats
 
-        print("Seating Capacity Found " + str(session['min seats']) + " " + str(session['max seats']))
+        if seat_values:
+            min_seats = min(seat_values)
+            max_seats = max(seat_values)
+            session['min seats'] = min_seats
+            session['max seats'] = max_seats
+            
+            print("Seating Capacity Found " + str(session['min seats']) + " " + str(session['max seats']))
+            return redirect('/price')
+        else: 
+            flash("Please choose a seating option.")
+            return redirect('/seating')
 
-        return redirect('/price')
     return render_template('seating.html')
 
 
@@ -169,12 +177,10 @@ def price():
         print("Price Range Found " + str(min_price) + " " + str(max_price))
 
         if min_price and max_price:
-            # session['min price'] = int(prices[0])
-            # session['max price'] = int(prices[1])
             session['min price'] = min_price
             session['max price'] = max_price
             print(session['min price'] + session['max price'])
-            return redirect('/result')
+            return redirect('/drivetrain')
         else:
             flash("Please enter valid price values.")
             return redirect('/price')
@@ -187,8 +193,14 @@ def price():
 def drivetrain():
     if request.method == 'POST':
         drivetrain_values = request.form.getlist('drivetrain_checkbox')
-        session['drivetrain'] = drivetrain_values
-        return redirect('/results')
+
+        if drivetrain_values:
+            session['drivetrain'] = drivetrain_values
+            print("Drivetrain found " + str(session['drivetrain']))
+            return redirect('/result')
+        else:
+            flash("Please choose a drivetrain option.")
+            return redirect('/drivetrain')
     
     return render_template('drivetrain.html')
 
