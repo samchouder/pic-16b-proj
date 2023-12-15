@@ -213,6 +213,7 @@ def result():
     min_seats = session.get('min seats', None)
     max_seats = session.get('max seats', None)
     fuel = session.get('fuel', None)
+    drivetrain = session.get('drivetrain', None)
 
     print("Flask Session Data: ")
     print(min_price)
@@ -220,6 +221,7 @@ def result():
     print(min_seats)
     print(max_seats)
     print(fuel)
+    print(drivetrain)
 
     # Load the data
     df = reading_csv()
@@ -235,9 +237,9 @@ def result():
     if fuel:
         df = categorical_filter(df, 'Fuel Type', fuel)
         print(df.head())
-    # if min_rating:
-    #     df['Rating'] = pd.to_numeric(df['Rating'], errors='coerce')
-    #     df = df[df['Rating'] >= min_rating]
+    if drivetrain: 
+        df = categorical_filter(df, 'Drivetrain', drivetrain)
+        print(df.head())
 
     # Paginate the results
     per_page = 25
