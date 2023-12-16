@@ -281,14 +281,12 @@ def result():
         df = categorical_filter(df, 'Drivetrain', drivetrain)
         print(df.head())
 
-    print(len(df))
-
     if len(df) == 0: 
         return render_template('no_result.html')
     else: 
         # Replacing NaN values with N/A
         df['Consumer Rating'] = df['Consumer Rating'].fillna('N/A')
-        df['Saefty Rating'] = df['Safety Rating'].fillna('N/A')
+        df['Safety Rating'] = df['Safety Rating'].fillna('N/A')
 
         # Paginate the results
         per_page = 25
