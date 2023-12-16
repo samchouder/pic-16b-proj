@@ -288,6 +288,7 @@ def result():
     else: 
         # Replacing NaN values with N/A
         df['Consumer Rating'] = df['Consumer Rating'].fillna('N/A')
+        df['Saefty Rating'] = df['Safety Rating'].fillna('N/A')
 
         # Paginate the results
         per_page = 25
@@ -309,3 +310,4 @@ def market():
 
 if __name__ == '__main__':
     app.run(debug=True)
+
