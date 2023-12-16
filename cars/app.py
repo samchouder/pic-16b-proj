@@ -178,7 +178,9 @@ def start():
 @app.route('/fuel', methods=['GET', 'POST'])
 def fuel():
     if request.method == 'POST':
+        # extract form data
         fuel_values = request.form.getlist('fuel_checkbox')
+        # proceeds to store Flask session variables only if data is valid input
         if fuel_values: 
             session['fuel'] = fuel_values
             print("Fuel Type found " + str(session['fuel']))
@@ -193,8 +195,9 @@ def fuel():
 @app.route('/seating', methods=['GET', 'POST'])
 def seating():
     if request.method == 'POST':
+        # extract form data
         seat_values = extract_numbers(request.form.getlist('seating_checkbox'))
-
+        # proceeds to store Flask session variables only if data is valid input
         if seat_values:
             min_seats = min(seat_values)
             max_seats = max(seat_values)
@@ -213,7 +216,9 @@ def seating():
 @app.route('/drivetrain', methods=['GET', 'POST'])
 def drivetrain():
     if request.method == 'POST':
+        # extract form data
         drivetrain_values = request.form.getlist('drivetrain_checkbox')
+        # proceeds to store Flask session variables only if data is valid input
         if drivetrain_values:
             session['drivetrain'] = drivetrain_values
             print("Drivetrain Found" +str(session['drivetrain']))
@@ -227,11 +232,11 @@ def drivetrain():
 @app.route('/price', methods=['GET', 'POST'])
 def price():
     if request.method == 'POST':
-        # prices = extract_numbers(request.form.getlist('price_input'))
+        # extract form data
         min_price = int(request.form.get('min_price'))
         max_price = int(request.form.get('max_price'))
         print("Price Range Found " + str(min_price) + " " + str(max_price))
-
+        # proceeds to store Flask session variables only if data is valid input
         if min_price and max_price:
             session['min price'] = min_price
             session['max price'] = max_price
